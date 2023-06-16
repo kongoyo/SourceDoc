@@ -1,0 +1,11 @@
+[
+  {
+    "extensions": [
+      "cmd"
+    ],
+    "name": "Create Command",
+    "command": "CRTCMD CMD(&CURLIB/&NAME) PGM(&CURLIB/&NAME) SRCSTMF('&RELATIVEPATH') OPTION(*EVENTF)",
+    "deployFirst": true,
+    "environment": "ile"
+  }
+]
