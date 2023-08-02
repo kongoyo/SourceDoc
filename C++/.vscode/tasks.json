@@ -2,7 +2,7 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: cpp.exe 建置使用中檔案",
+            "label": "C/C++: g++.exe 建置使用中檔案",
             "command": "D:\\TOOLS\\msys2\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
