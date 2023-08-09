@@ -1,6 +1,6 @@
 {
     "ibm-i-acs.host": "",
-    "cmake.sourceDirectory": "E:/src/SourceDoc/C++/projects/putty-src/windows",
+    "cmake.sourceDirectory": "D:/Downloads/SourceDoc/C++/projects/putty-src",
     "python.analysis.typeCheckingMode": "basic",
     "C_Cpp.default.compilerPath": ""
 }
