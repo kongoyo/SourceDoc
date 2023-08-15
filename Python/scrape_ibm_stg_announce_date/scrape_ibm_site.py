@@ -16,7 +16,7 @@ soup = BeautifulSoup(html_content.content, "html.parser")
 
 # 找到表头
 thead = soup.find("thead")
-header_cells = thead.find_all("th")
+header_cells = thead.find_all("th")  # type: ignore
 header_labels = [
     cell.find("div", class_="bx--table-header-label").text.strip()
     for cell in header_cells
@@ -24,7 +24,7 @@ header_labels = [
 
 # 找到数据行
 tbody = soup.find("tbody")
-data_rows = tbody.find_all("tr")
+data_rows = tbody.find_all("tr")  # type: ignore
 
 # 提取数据
 data = []
