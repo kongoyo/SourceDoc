@@ -9,10 +9,18 @@ url = (
     + model
     + "&parsebody=true&lang=en&role="
 )
-
+print(url)
 html_content = requests.get(url)
 # 解析HTML内容
 soup = BeautifulSoup(html_content.content, "html.parser")
+
+# 找到設備名稱
+title_cells = soup.find_all("body")
+title_label = [
+    cell.find("h1", class_="topictitle1 bx--type-productive-heading-06").text.strip()
+    for cell in title_cells
+]
+print(title_label)
 
 # 找到表头
 thead = soup.find("thead")
