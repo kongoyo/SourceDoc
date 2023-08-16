@@ -1,6 +1,4 @@
-import html.parser
 import json
-import re
 
 import pandas as pd
 import requests
