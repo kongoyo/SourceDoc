@@ -49,9 +49,15 @@
                     "description": "將反組譯碼變體設為 Intel",
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
+                },
+                {
+                    "name": "Debug Unit Test",
+                    "type": "python",
+                    "request": "test",
+                    "justMyCode": false,
                 }
             ],
-            "preLaunchTask": "C/C++: gcc.exe 建置使用中檔案"
+            "preLaunchTask": "C/C++: gcc.exe 建置使用中檔案",
         }
     ]
 }
