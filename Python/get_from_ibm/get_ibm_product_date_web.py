@@ -17,7 +17,7 @@ def main_func():
 
 
 def model1_func():
-    web_model1 = st.text_input('輸入機型 ( XXXX-XXX ) : ', key=1)
+    web_model1 = st.text_input('輸入機型 ( 標準: XXXX-XXX ， 可模糊輸入 ) : ', key=1)
     # 查詢第二種機型代碼
     query_url = (
             "https://www.ibm.com/docs/api/v1/search/announcements?query="
