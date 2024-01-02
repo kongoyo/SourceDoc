@@ -1,0 +1,1 @@
+D:\Downloads\SourceDoc\.Net core\examples\App1\App1\App1\App1.csproj;x64

@@ -1,0 +1,16 @@
+# 
+#Wed Sep 20 02:51:53 CST 2023
+com.ibm.etools.iseries.rse.ui.generic.objattr=PF-SRC;*
+com.ibm.etools.iseries.rse.ui.objtbl.subset.mbr.name=*
+com.ibm.etools.iseries.rse.ui.objtbl.filter.mbr.file=*
+org.eclipse.rse.preferences.verify.connection=false
+com.ibm.etools.iseries.rse.ui.generic.lib=*ALLUSR;CLARK;*LIBL;*USRLIBL;*CURLIB;*ALL
+org.eclipse.rse.internal.ui.view.SystemViewConnectionAdapter\:org.eclipse.rse.ui.view.SystemTableView=org.eclipse.rse.ui.profile;org.eclipse.rse.ui.systemType;org.eclipse.rse.ui.connected;org.eclipse.rse.ui.hostname;org.eclipse.rse.ui.defaultuserid;org.eclipse.rse.ui.description
+com.ibm.etools.iseries.rse.ui.objtbl.filter.mbr.name=*
+org.eclipse.rse.internal.ui.view.SystemViewConnectionAdapter\:org.eclipse.rse.ui.view.SystemTableView\:column_widths=204;306;306;306;306;204;204
+org.eclipse.rse.internal.ui.view.SystemViewSubSystemAdapter\:org.eclipse.rse.ui.view.SystemTableView=org.eclipse.rse.ui.userid;org.eclipse.rse.ui.port;org.eclipse.rse.ui.connected;org.eclipse.rse.ui.vrm
+com.ibm.etools.iseries.rse.ui.objtbl.subset.mbr.type=*;*BLANK;BND;C;CBL;CBLLE;CLD;CLE;CLLE;CLP;CMD;CPP;CPPLE;DFU;DSPF;ICFF;LF;MENU;MNU;MNUCMD;MNUDDS;PF;PNLGRP;PRTF;REXX;RPG;RPGLE;RPT;SQLC;SQLCBL;SQLCBLLE;SQLRPG;SQLRPGLE;TBL;TXT;UIM
+com.ibm.etools.iseries.rse.ui.objtype=*FILE;*
+com.ibm.etools.iseries.rse.ui.generic.obj=*
+org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter\:org.eclipse.rse.internal.ui.view.search.SystemSearchTableView=org.eclipse.rse.ui.file.classification;org.eclipse.rse.ui.file.lastmodified;org.eclipse.rse.ui.file.size;org.eclipse.rse.ui.file.canonicalpath;org.eclipse.rse.ui.file.extension
+org.eclipse.rse.internal.ui.view.SystemViewSubSystemAdapter\:org.eclipse.rse.ui.view.SystemTableView\:column_widths=311;468;468;468;468

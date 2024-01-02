@@ -1,0 +1,836 @@
+!SESSION 2023-09-19 15:12:51.906 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=11.0.18+10
+JRE 11 Windows 11 amd64-64-Bit Compressed References 20230213_478 (JIT enabled, AOT enabled)
+OpenJ9   - 0592661e4
+OMR      - f491bbf6f
+JCL      - 90e1a4e204 based on jdk-11.0.18+10
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Framework arguments:  -showlocation -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -pluginCustomization plugin_customization.ini
+
+!ENTRY com.ibm.cic.licensing.common.p2.touchpoint 1 0 2023-09-19 15:12:57.349
+!MESSAGE License policy data Location=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:12:57.928
+!MESSAGE Installing LUM License..
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:12:57.929
+!MESSAGE Found com.ibm.cic.licensing.p2.home.dir=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:12:57.933
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:12:57.934
+!MESSAGE Get p2 lic data home dir from 'com.ibm.cic.licensing.p2.home.dir'=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:12:57.934
+!MESSAGE P2 data location exists.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:12:57.935
+!MESSAGE Sub dirs does not exist. Is creating them OK=true
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:12:57.936
+!MESSAGE NodeLocked File=C:/ProgramData/IBM/p2/license/LUM/nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:12:57.936
+!MESSAGE Enrolling license,
+	inputLUM File   :D:\Downloads\windows\IBM Rational Developer for i\dropins\rdi_license\plugins\com.ibm.rdi.lum.kit.trynbuy_9.8.0.202304041708\rdirpgcobol98trial120day.lic
+	nodeLocked File :C:\ProgramData\IBM\p2\license\LUM\nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:12:57.937
+!MESSAGE Its a tryBuy license
+
+!ENTRY org.eclipse.jface 2 0 2023-09-19 15:13:33.396
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-19 15:13:33.396
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f68c1d57,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,在編輯器中開啟 IBM i 成員,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8c166a1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.ibm.etools.iseries.rse.ui 1 0 2023-09-19 15:13:33.845
+!MESSAGE Rational Developer for i product plugin version 9.8.0.202304121327
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:35.376
+!MESSAGE P2 based install. Validate P2_DATA_LOCATION_KEY location
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:35.377
+!MESSAGE P2 data location exist and writable
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:35.397
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:35.397
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:35.404
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:35.585
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:35.586
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:45.863
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:45.863
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:13:45.891
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2023-09-19 15:15:20.751
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2023-09-19 15:15:20.751
+!MESSAGE session context was:(profile=profile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-19 15:15:20.751
+!MESSAGE No repository found containing: osgi.bundle,com.ibm.rdi.lum.kit.rpgtools,9.8.0.202304130741
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-19 15:15:20.751
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.ibm.rdi.lum.kit.rpgtools.feature,9.8.0.202304130741
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-09-19 15:19:38.183
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2023-09-19 15:20:25.170 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=11.0.18+10
+JRE 11 Windows 11 amd64-64-Bit Compressed References 20230213_478 (JIT enabled, AOT enabled)
+OpenJ9   - 0592661e4
+OMR      - f491bbf6f
+JCL      - 90e1a4e204 based on jdk-11.0.18+10
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Framework arguments:  -showlocation -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -pluginCustomization plugin_customization.ini
+
+!ENTRY com.ibm.cic.licensing.common.p2.touchpoint 1 0 2023-09-19 15:20:42.369
+!MESSAGE Config property 'com.ibm.cic.licensing.p2.home.dir' already exist.
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:20:42.370
+!MESSAGE Installing LUM License..
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:20:42.371
+!MESSAGE Found com.ibm.cic.licensing.p2.home.dir=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:42.377
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:42.377
+!MESSAGE Get p2 lic data home dir from 'com.ibm.cic.licensing.p2.home.dir'=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:42.377
+!MESSAGE P2 data location exists.
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:20:42.378
+!MESSAGE NodeLocked File=C:/ProgramData/IBM/p2/license/LUM/nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:20:42.379
+!MESSAGE Enrolling license,
+	inputLUM File   :D:\TOOLS\IBM Rational Developer for i\dropins\rdi_license\plugins\com.ibm.rdi.lum.kit.trynbuy_9.8.0.202304041708\rdirpgcobol98trial120day.lic
+	nodeLocked File :C:\ProgramData\IBM\p2\license\LUM\nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:20:42.425
+!MESSAGE Its a tryBuy license
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-09-19 15:20:45.825
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2023-09-19 15:20:46.925
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-19 15:20:46.925
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9805050a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,在編輯器中開啟 IBM i 成員,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b78fd2f0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.ibm.etools.iseries.rse.ui 1 0 2023-09-19 15:20:47.855
+!MESSAGE Rational Developer for i product plugin version 9.8.0.202304121327
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:48.803
+!MESSAGE P2 based install. Validate P2_DATA_LOCATION_KEY location
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:48.804
+!MESSAGE P2 data location exist and writable
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:48.838
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:48.839
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:48.841
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:48.934
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:20:48.934
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.p2.touchpoint 1 0 2023-09-19 15:21:45.880
+!MESSAGE Config property 'com.ibm.cic.licensing.p2.home.dir' already exist.
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:21:45.881
+!MESSAGE Installing LUM License..
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:21:45.881
+!MESSAGE Found com.ibm.cic.licensing.p2.home.dir=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:45.882
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:21:45.882
+!MESSAGE NodeLocked File=C:/ProgramData/IBM/p2/license/LUM/nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:21:45.882
+!MESSAGE Enrolling license,
+	inputLUM File   :D:\TOOLS\IBM Rational Developer for i\plugins\com.ibm.rdi.lum.kit.rpgtools_9.8.0.202304130741\rdirpgcobol98perm.lic
+	nodeLocked File :C:\ProgramData\IBM\p2\license\LUM\nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:21:45.882
+!MESSAGE Not a tryBuy license
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-19 15:21:45.885
+!MESSAGE Enrolled successfully.
+!SESSION 2023-09-19 15:21:49.525 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=11.0.18+10
+JRE 11 Windows 11 amd64-64-Bit Compressed References 20230213_478 (JIT enabled, AOT enabled)
+OpenJ9   - 0592661e4
+OMR      - f491bbf6f
+JCL      - 90e1a4e204 based on jdk-11.0.18+10
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Framework arguments:  -showlocation -pluginCustomization plugin_customization.ini
+Command-line arguments:  -data file:/D:/Downloads/SourceDoc/RDi/workspace/ -os win32 -ws win32 -arch x86_64 -showlocation -pluginCustomization plugin_customization.ini
+
+!ENTRY org.eclipse.jface 2 0 2023-09-19 15:21:54.891
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-19 15:21:54.891
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9ac9370a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,在編輯器中開啟 IBM i 成員,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ac57ab6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.ibm.etools.iseries.rse.ui 1 0 2023-09-19 15:21:55.762
+!MESSAGE Rational Developer for i product plugin version 9.8.0.202304121327
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.636
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.637
+!MESSAGE P2 based install. Validate P2_DATA_LOCATION_KEY location
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.638
+!MESSAGE P2 data location exist and writable
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.662
+!MESSAGE Get p2 lic data home dir from 'com.ibm.cic.licensing.p2.home.dir'=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.662
+!MESSAGE P2 data location exists.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.664
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.668
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.721
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:21:56.721
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:22:22.088
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-19 15:22:22.088
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-09-19 15:22:22.551
+!MESSAGE Error trying to establish secure connection to 172.16.14.61
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:353)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:296)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:291)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:443)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:183)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1507)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1417)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:456)
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1292)
+	at java.base/java.io.OutputStream.write(OutputStream.java:122)
+	at com.ibm.as400.access.DataStream.write(DataStream.java:338)
+	at com.ibm.as400.access.SignonExchangeAttributeReq.write(SignonExchangeAttributeReq.java:64)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:3625)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:3400)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3743)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:3298)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4669)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1610)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1567)
+	at com.ibm.etools.iseries.connectorservice.ToolboxConnectorService.internalConnect(ToolboxConnectorService.java:319)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:507)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:450)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:514)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalConnect(SubSystem.java:2832)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.performOperation(SubSystem.java:1799)
+	at org.eclipse.rse.core.subsystems.SubSystem$SubSystemOperationJob.run(SubSystem.java:1471)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.run(SubSystem.java:1778)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:313)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:222)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
+	... 31 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 37 more
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-09-19 15:22:22.556
+!MESSAGE EVFA9113
+!SESSION 2023-09-20 02:43:54.622 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=11.0.18+10
+JRE 11 Windows 11 amd64-64-Bit Compressed References 20230213_478 (JIT enabled, AOT enabled)
+OpenJ9   - 0592661e4
+OMR      - f491bbf6f
+JCL      - 90e1a4e204 based on jdk-11.0.18+10
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Framework arguments:  -showlocation -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -pluginCustomization plugin_customization.ini
+
+!ENTRY com.ibm.cic.licensing.common.p2.touchpoint 1 0 2023-09-20 02:44:13.716
+!MESSAGE Config property 'com.ibm.cic.licensing.p2.home.dir' already exist.
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-20 02:44:13.717
+!MESSAGE Installing LUM License..
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-20 02:44:13.717
+!MESSAGE Found com.ibm.cic.licensing.p2.home.dir=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:13.726
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:13.726
+!MESSAGE Get p2 lic data home dir from 'com.ibm.cic.licensing.p2.home.dir'=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:13.727
+!MESSAGE P2 data location exists.
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-20 02:44:13.728
+!MESSAGE NodeLocked File=C:/ProgramData/IBM/p2/license/LUM/nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-20 02:44:13.728
+!MESSAGE Enrolling license,
+	inputLUM File   :D:\TOOLS\IBM\IBM Rational Developer for i\dropins\rdi_license\plugins\com.ibm.rdi.lum.kit.trynbuy_9.8.0.202304041708\rdirpgcobol98trial120day.lic
+	nodeLocked File :C:\ProgramData\IBM\p2\license\LUM\nodelockp2
+
+!ENTRY com.ibm.cic.licensing.common.p2.lum.touchpoint 1 0 2023-09-20 02:44:13.827
+!MESSAGE Its a tryBuy license
+
+!ENTRY org.eclipse.jface 2 0 2023-09-20 02:44:19.736
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-20 02:44:19.736
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7893ff6b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,在編輯器中開啟 IBM i 成員,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@fc41e537,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.ibm.etools.iseries.rse.ui 1 0 2023-09-20 02:44:20.575
+!MESSAGE Rational Developer for i product plugin version 9.8.0.202304121327
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:21.649
+!MESSAGE P2 based install. Validate P2_DATA_LOCATION_KEY location
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:21.651
+!MESSAGE P2 data location exist and writable
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:21.672
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:21.672
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:21.677
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:21.946
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:44:21.946
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:45:54.738
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-09-20 02:45:54.739
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-09-20 02:46:00.776
+!MESSAGE 無法建立與 172.16.13.34 的安全連線
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibm.as400.access.PortMapper.getSocketConnection(PortMapper.java:272)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:205)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:129)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:3608)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:3400)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3743)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:3298)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4669)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1610)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1567)
+	at com.ibm.etools.iseries.connectorservice.ToolboxConnectorService.internalConnect(ToolboxConnectorService.java:319)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:507)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:450)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:514)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalConnect(SubSystem.java:2832)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.performOperation(SubSystem.java:1799)
+	at org.eclipse.rse.core.subsystems.SubSystem$SubSystemOperationJob.run(SubSystem.java:1471)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.run(SubSystem.java:1778)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-09-20 02:46:14.418
+!MESSAGE 無法建立與 172.16.13.34 的安全連線
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibm.as400.access.PortMapper.getSocketConnection(PortMapper.java:272)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:205)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:129)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:3608)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:3400)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3743)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:3298)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4669)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1610)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1567)
+	at com.ibm.etools.iseries.connectorservice.ToolboxConnectorService.internalConnect(ToolboxConnectorService.java:319)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:507)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:450)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:514)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalConnect(SubSystem.java:2832)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.performOperation(SubSystem.java:1799)
+	at org.eclipse.rse.core.subsystems.SubSystem$SubSystemOperationJob.run(SubSystem.java:1471)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.run(SubSystem.java:1778)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-09-20 02:46:36.801
+!MESSAGE 無法建立與 172.16.13.34 的安全連線
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibm.as400.access.PortMapper.getSocketConnection(PortMapper.java:272)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:205)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:129)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:3608)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:3400)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3743)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:3298)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4669)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1610)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1567)
+	at com.ibm.etools.iseries.connectorservice.ToolboxConnectorService.internalConnect(ToolboxConnectorService.java:319)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:507)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:450)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:514)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalConnect(SubSystem.java:2832)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.performOperation(SubSystem.java:1799)
+	at org.eclipse.rse.core.subsystems.SubSystem$SubSystemOperationJob.run(SubSystem.java:1471)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.run(SubSystem.java:1778)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-09-20 02:48:06.621
+!MESSAGE 無法建立與 172.16.13.34 的安全連線
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibm.as400.access.PortMapper.getSocketConnection(PortMapper.java:272)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:205)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:129)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:3608)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:3400)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3743)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:3298)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4669)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1610)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1567)
+	at com.ibm.etools.iseries.connectorservice.ToolboxConnectorService.internalConnect(ToolboxConnectorService.java:319)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:507)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:450)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:514)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalConnect(SubSystem.java:2832)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.performOperation(SubSystem.java:1799)
+	at org.eclipse.rse.core.subsystems.SubSystem$SubSystemOperationJob.run(SubSystem.java:1471)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.run(SubSystem.java:1778)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.security 1 0 2023-09-20 02:48:28.399
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-09-20 03:02:43.770
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2023-11-09 21:26:54.275 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=11.0.18+10
+JRE 11 Windows 11 amd64-64-Bit Compressed References 20230213_478 (JIT enabled, AOT enabled)
+OpenJ9   - 0592661e4
+OMR      - f491bbf6f
+JCL      - 90e1a4e204 based on jdk-11.0.18+10
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Framework arguments:  -showlocation -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -pluginCustomization plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-11-09 21:27:00.687
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2023-11-09 21:27:10.880
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-09 21:27:10.880
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@bcb8692f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,在編輯器中開啟 IBM i 成員,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b8e24762,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.187
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.187
+!MESSAGE P2 based install. Validate P2_DATA_LOCATION_KEY location
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.188
+!MESSAGE P2 data location exist and writable
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.208
+!MESSAGE Get p2 lic data home dir from 'com.ibm.cic.licensing.p2.home.dir'=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.209
+!MESSAGE P2 data location exists.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.210
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.213
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.621
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:12.621
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.etools.iseries.rse.ui 1 0 2023-11-09 21:27:12.990
+!MESSAGE Rational Developer for i product plugin version 9.8.0.202304121327
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:13.415
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-09 21:27:13.415
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-11-09 21:27:37.725
+!MESSAGE 無法建立和 172.16.13.34 的連線。
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibm.as400.access.PortMapper.getSocketConnection(PortMapper.java:272)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:172)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:129)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:3608)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:3400)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3743)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:3298)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4669)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1610)
+	at com.ibm.as400.access.AS400.connectService(AS400.java:1567)
+	at com.ibm.etools.iseries.connectorservice.ToolboxConnectorService.internalConnect(ToolboxConnectorService.java:319)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:507)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:450)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:514)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalConnect(SubSystem.java:2832)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.performOperation(SubSystem.java:1799)
+	at org.eclipse.rse.core.subsystems.SubSystem$SubSystemOperationJob.run(SubSystem.java:1471)
+	at org.eclipse.rse.core.subsystems.SubSystem$ConnectJob.run(SubSystem.java:1778)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-11-09 21:27:37.754
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.rse.ui 4 0 2023-11-09 21:27:37.818
+!MESSAGE Exception resolving filters' strings 
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com.ibm.etools.iseries.subsystems.qsys.objects.QSYSObjectSubSystem.internalResolveFilterString(QSYSObjectSubSystem.java:365)
+	at com.ibm.etools.iseries.subsystems.qsys.objects.QSYSObjectSubSystem.internalResolveFilterString(QSYSObjectSubSystem.java:216)
+	at com.ibm.etools.iseries.subsystems.qsys.objects.QSYSObjectSubSystem.internalResolveFilterString(QSYSObjectSubSystem.java:185)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalResolveFilterStrings(SubSystem.java:2950)
+	at org.eclipse.rse.core.subsystems.SubSystem.resolveFilterStrings(SubSystem.java:2318)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.internalGetChildren(SystemViewFilterReferenceAdapter.java:473)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.getChildren(SystemViewFilterReferenceAdapter.java:291)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.getChildren(SystemViewFilterReferenceAdapter.java:299)
+	at org.eclipse.rse.internal.ui.view.SystemViewPart$RestoreRemoteObjects.doRestore(SystemViewPart.java:1715)
+	at org.eclipse.rse.internal.ui.view.SystemViewPart$RestoreRemoteObjects.run(SystemViewPart.java:1587)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException
+	at com.ibm.etools.iseries.subsystems.qsys.objects.QSYSObjectSubSystem.internalResolveFilterString(QSYSObjectSubSystem.java:279)
+	... 10 more
+Root exception:
+java.lang.NullPointerException
+	at com.ibm.etools.iseries.subsystems.qsys.objects.QSYSObjectSubSystem.internalResolveFilterString(QSYSObjectSubSystem.java:279)
+	at com.ibm.etools.iseries.subsystems.qsys.objects.QSYSObjectSubSystem.internalResolveFilterString(QSYSObjectSubSystem.java:216)
+	at com.ibm.etools.iseries.subsystems.qsys.objects.QSYSObjectSubSystem.internalResolveFilterString(QSYSObjectSubSystem.java:185)
+	at org.eclipse.rse.core.subsystems.SubSystem.internalResolveFilterStrings(SubSystem.java:2950)
+	at org.eclipse.rse.core.subsystems.SubSystem.resolveFilterStrings(SubSystem.java:2318)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.internalGetChildren(SystemViewFilterReferenceAdapter.java:473)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.getChildren(SystemViewFilterReferenceAdapter.java:291)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.getChildren(SystemViewFilterReferenceAdapter.java:299)
+	at org.eclipse.rse.internal.ui.view.SystemViewPart$RestoreRemoteObjects.doRestore(SystemViewPart.java:1715)
+	at org.eclipse.rse.internal.ui.view.SystemViewPart$RestoreRemoteObjects.run(SystemViewPart.java:1587)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-11-15 11:29:48.787 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=11.0.18+10
+JRE 11 Windows 11 amd64-64-Bit Compressed References 20230213_478 (JIT enabled, AOT enabled)
+OpenJ9   - 0592661e4
+OMR      - f491bbf6f
+JCL      - 90e1a4e204 based on jdk-11.0.18+10
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Framework arguments:  -showlocation -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -pluginCustomization plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-11-15 11:29:56.330
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2023-11-15 11:30:06.683
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-15 11:30:06.683
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8b1c660a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,在編輯器中開啟 IBM i 成員,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e8d40078,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:08.537
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:08.537
+!MESSAGE P2 based install. Validate P2_DATA_LOCATION_KEY location
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:08.537
+!MESSAGE P2 data location exist and writable
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:08.552
+!MESSAGE Get p2 lic data home dir from 'com.ibm.cic.licensing.p2.home.dir'=C:\ProgramData
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:08.552
+!MESSAGE P2 data location exists.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:08.552
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:08.552
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:09.002
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:30:09.002
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.etools.iseries.rse.ui 1 0 2023-11-15 11:30:09.473
+!MESSAGE Rational Developer for i product plugin version 9.8.0.202304121327
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2023-11-15 11:30:29.567
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at file:/D:/Downloads/RDi_Act_Kit_9.8_MP_ML/RDi_9.8_RPGCOBOLTools_AU_Lic_Act_Kit_P2/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:405)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:709)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:126)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:110)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$1.runModal(PreloadingRepositoryHandler.java:84)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2023-11-15 11:30:29.567
+!MESSAGE No repository found at file:/D:/Downloads/RDi_Act_Kit_9.8_MP_ML/RDi_9.8_RPGCOBOLTools_AU_Lic_Act_Kit_P2/.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:09.780
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:09.780
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:09.795
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:14.568
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:14.568
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:14.568
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:14.569
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:14.572
+!MESSAGE P2 based install. Found com.ibm.cic.licensing.common.p2.touchpoint bundle.
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:48.714
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY com.ibm.cic.licensing.common.util 1 0 2023-11-15 11:31:48.714
+!MESSAGE Existing P2 license location=C:\ProgramData\IBM\p2\license
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-11-15 11:33:02.988
+!MESSAGE The workspace will exit with unsaved changes in this session.

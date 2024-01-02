@@ -1,0 +1,15 @@
+QA1AOPT
+*FILE
+PF-SRC
+QUSRBRM
+
+QA1ASRC
+*FILE
+PF-SRC
+QUSRBRM
+Printer file source
+QO1AUSRRCY
+*FILE
+PF-SRC
+QUSRBRM
+User recovery information

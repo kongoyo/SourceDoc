@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xewmgPWwv+ZmlDnXwEk9iuRBRFAAQ6Zn/GQBpXZ5Z0VlQ3YW7zy+uhR9kwpoJ96qNl3Y/vW0zaAtKIuje3uTyw==",
+  "success": true,
+  "projectFilePath": "D:\\Downloads\\SourceDoc\\.Net core\\examples\\MyApp\\MyApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kongo\\.nuget\\packages\\ibm.data.db2.core\\3.1.0.600\\ibm.data.db2.core.3.1.0.600.nupkg.sha512"
+  ],
+  "logs": []
+}

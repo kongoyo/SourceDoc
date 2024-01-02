@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.ibm.etools.iseries.cheatsheet.content:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.iseries.codecoverage:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.iseries.programverifiers.nl1:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.iseries.programverifiers:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.iseries.projects.core:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.iseries.rse.ui:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.iseries.server.rmtshell:9.8.0.v200811100150"/>
+		<item value="com.ibm.etools.iseries.toolbox:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.power.cobol.edit:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.systems.application.model:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.systems.pushtoclient.core:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.unix.shdt.basheditor:9.8.0.202304121327"/>
+		<item value="com.ibm.etools.unix.ui:9.8.0.202304121327"/>
+		<item value="com.ibm.iseries.rse:9.8.0.202304121327"/>
+		<item value="com.ibm.rational.developer.ibmi.product.nl1:9.8.0.202304121327"/>
+		<item value="com.ibm.rational.developer.ibmi.product.notices.feature:9.8.0.202304191928"/>
+		<item value="com.ibm.rational.developer.ibmi.product:9.8.0.202304121327"/>
+		<item value="org.eclipse.imp.runtime:0.1.104.202304121327"/>
+	</list>
+</section>

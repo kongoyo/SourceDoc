@@ -1,0 +1,11 @@
+com.ibm.etools.iseries.rse.ui.objtbl.filter.lib.name=*LIBL;*CURLIB;*USRLIBL;*
+com.ibm.etools.iseries.rse.ui.objtbl.filter.mbr.file=*
+com.ibm.etools.iseries.rse.ui.objtbl.filter.mbr.name=*
+com.ibm.etools.iseries.rse.ui.objtbl.subset.lib.attr=*;PROD*;TEST*
+com.ibm.etools.iseries.rse.ui.objtbl.subset.lib.name=*
+com.ibm.etools.iseries.rse.ui.objtbl.subset.mbr.name=*
+com.ibm.etools.iseries.rse.ui.objtbl.subset.mbr.type=*;*BLANK;BND;C;CBL;CBLLE;CLD;CLE;CLLE;CLP;CMD;CPP;CPPLE;DFU;DSPF;ICFF;LF;MENU;MNU;MNUCMD;MNUDDS;PF;PNLGRP;PRTF;REXX;RPG;RPGLE;RPT;SQLC;SQLCBL;SQLCBLLE;SQLRPG;SQLRPGLE;TBL;TXT;UIM
+com.ibm.etools.iseries.rse.ui.objtbl.subset.text=*;*BLANK
+eclipse.preferences.version=1
+org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter\:org.eclipse.rse.internal.ui.view.search.SystemSearchTableView=org.eclipse.rse.ui.file.classification;org.eclipse.rse.ui.file.lastmodified;org.eclipse.rse.ui.file.size;org.eclipse.rse.ui.file.canonicalpath;org.eclipse.rse.ui.file.extension
+org.eclipse.rse.preferences.order.connections=STEVECHEN-3113.\u672C\u7AEF

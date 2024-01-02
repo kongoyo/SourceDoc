@@ -1,0 +1,6 @@
+com.ibm.etools.iseries.rse.ui.preferences.hasRSEIntroDisplayed=true
+com.ibm.etools.iseries.rse.ui.preferences.pdm.new.connection.view.setup=true
+com.ibm.etools.iseries.rse.ui.preferences.promptConnectionSetup=true
+com.ibm.etools.iseries.rse.ui.preferences.tableview.quickfilter.rightside=false
+com.ibm.etools.iseries.rse.ui.preferences.tableview.quickfilter.use=true
+eclipse.preferences.version=1

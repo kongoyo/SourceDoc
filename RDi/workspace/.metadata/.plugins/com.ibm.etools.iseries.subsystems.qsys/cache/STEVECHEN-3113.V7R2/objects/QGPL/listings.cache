@@ -1,0 +1,130 @@
+QCBLLESRC
+*FILE
+PF-SRC
+QGPL
+
+QCBLSRC
+*FILE
+PF-SRC
+QGPL
+
+QCLPSRC
+*FILE
+PF-SRC
+QGPL
+
+QCLPSRC1
+*FILE
+PF-SRC
+QGPL
+
+QCLPSRC2
+*FILE
+PF-SRC
+QGPL
+
+QCLSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for CL source
+QCMDSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for cmd def src
+QCPPSRC
+*FILE
+PF-SRC
+QGPL
+ILE C++ SOURCE FILE
+QCSRC
+*FILE
+PF-SRC
+QGPL
+ILE C SOURCE FILE
+QDDSSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for DDS source
+QEWCKBDMAP
+*FILE
+PF-SRC
+QGPL
+Extended Wireless Keyboard Remap Rules File
+QEWCSCNFMT
+*FILE
+PF-SRC
+QGPL
+Extended Wireless Screen Reformat Rules File
+QEWCSRC
+*FILE
+PF-SRC
+QGPL
+Source file for Extended Wireless Controller data
+QEWLSRC
+*FILE
+PF-SRC
+QGPL
+Source file for Extended Wireless Line data
+QFMTSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for FMT source
+QLBLSRC
+*FILE
+PF-SRC
+QGPL
+
+QMNUSRC
+*FILE
+PF-SRC
+QGPL
+Default source file for UIM menu source
+QPNLSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for UIM source
+QREXSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for REXX source
+QRPGLESRC
+*FILE
+PF-SRC
+QGPL
+
+QRPGSRC
+*FILE
+PF-SRC
+QGPL
+
+QSCLRCT
+*FILE
+PF-SRC
+QGPL
+
+QSRVSRC
+*FILE
+PF-SRC
+QGPL
+Binder language source file
+QSTARTUP
+*FILE
+PF-SRC
+QGPL
+
+QTBLSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for table source
+QTXTSRC
+*FILE
+PF-SRC
+QGPL
+

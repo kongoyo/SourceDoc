@@ -1,0 +1,52 @@
+000100000000     A* Free Form Menu: BKUP
+000200000000     A*%%TS  SD  20210224  171618  VENGOAL     REL-V7R3M0  5770-WDS
+000300000000     A*%%EC
+000400000000     A                                      DSPSIZ(24 80 *DS3                  -
+000500000000     A                                             27 132 *DS4)
+000600000000     A                                      CHGINPDFT
+000700000000     A                                      INDARA
+000800000000     A                                      PRINT(*LIBL/QSYSPRT)
+000900000000     A          R BKUP
+001000000000     A*%%TS  SD  20210209  100949  VENGOAL     REL-V7R2M0  5770-WDS
+001100000000     A                                      DSPMOD(*DS3)
+001200000000     A                                      LOCK
+001300000000     A                                      SLNO(01)
+001400000000     A                                      CLRL(*ALL)
+001500000000     A                                      ALWROL
+001600000000     A                                      CF03
+001700000000     A                                      HELP
+001800000000     A                                      HOME
+001900000000     A                                      HLPRTN
+002000000000     A                                  1  2'BKUP'
+002100000000     A                                      COLOR(BLU)
+002200000000     A                                  1 33'BACKUP Menu'
+002300000000     A                                      DSPATR(RI)
+002400000000     A                                  1 66'Date:'
+002500000000     A                                  1 72DATE
+002600000000     A                                      EDTCDE(Y)
+002700000000     A                                  2 72TIME
+002800000000     A                                  3  2'Select one of the following:'
+002900000000     A                                      COLOR(BLU)
+003000000000     A                                  3 72SYSNAME
+003100000000     A                                      DSPATR(RI)
+003200000000     A                                  4  7'MIMIX'
+003300000000     A                                      DSPATR(RI)
+003400000000     A                                  5  7'1. Submit Backup Job - Daily'
+003500000000     A                                  6  7'2. Submit Backup Job - Weekly'
+003600000000     A                                  8  7'4. Maintain Save Group'
+003700000000     A                                  9  7'5. Restore  object'
+003800000000     A                                 10  7'6.'
+003900000000     A                                 11  7'7. View Backup Log'
+004000000000     A                                 12  7'8. End Mimix Commit'
+004100000000     A                                 13  7'9. Start Mimix Commit'
+004200000000     A                                 14  6'10. Check MIMIX Status'
+004300000000     A*                                15  6'11.'
+004400000000     A                                 17  6'90. Sign off'
+004500000000     A                                  4 47'S104BGAM'
+004600000000     A                                      DSPATR(RI)
+004700000000     A                                  5 47'31. Submit Backup Job - TDaily'
+004800000000     A                                  6 47'32. Submit Backup Job - TWeekly'
+004900000000     A                                  7 47'33. Submit Backup Job - TMonthly'
+005000000000     A* CMDPROMPT  Do not delete this DDS spec.
+005100000000     A                                019  2'Selection or command              -
+005200000000     A                                          '

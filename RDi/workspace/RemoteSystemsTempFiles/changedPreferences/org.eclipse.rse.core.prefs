@@ -1,0 +1,5 @@
+# 
+#Tue Sep 19 15:13:35 CST 2023
+org.eclipse.rse.systemtype.windows.systemType.enabled=false
+org.eclipse.rse.systemtype.unix.systemType.enabled=false
+org.eclipse.rse.systemtype.linux.systemType.enabled=false
