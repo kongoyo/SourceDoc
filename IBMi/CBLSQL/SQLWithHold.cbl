@@ -4,7 +4,7 @@
 *-----------------------------------------------------------------------------
 
 identification division.
-program-id. SQLWithHold.
+program-id. SQLWithHld.
 
 environment division.
 configuration section.

@@ -1,0 +1,37 @@
+;
+; POPMNU_MK
+; ---------
+; Make member for the module and command POPMNU.
+;
+v &lib jwtools
+v &srclib jwtools
+v &proto PopMnu_Pr
+v &debug  *source
+;
+; Check and possibly build PopMnu module.
+;
+v &mod1 PopMnu
+o &srclib &mod1 *module
+u &srclib qrpglesrc *file &mod1
+u &srclib qrpglesrc *file &proto
+u &srclib qrpglesrc *file qsnapiw_h
+ci dltmod &srclib/&mod1
+c crtrpgmod &srclib/&mod1 srcfile(&srclib/qrpglesrc) dbgview(&debug)
+;
+; Check and possibly build PopMnu_Ex1 module.
+;
+v &mod2 PopMnu_Ex
+o &srclib &mod2 *module
+u &srclib qrpglesrc *file &mod2
+u &srclib qrpglesrc *file &proto
+ci dltmod &srclib/&mod2
+c crtrpgmod &srclib/&mod2 srcfile(&srclib/qrpglesrc) dbgview(&debug)
+;
+; Build main program.
+;
+v &pgm PopMnu_Ex
+o &lib &pgm *pgm
+u &srclib &mod1 *module
+u &srclib &mod2 *module
+ci DltPgm &lib/&pgm
+c CrtPgm &lib/&pgm module(&srclib/&mod1 &srclib/&mod2)
