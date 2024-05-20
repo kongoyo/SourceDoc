@@ -1,0 +1,130 @@
+     A*%%TS  SD  20240519  071825  QSECOFR     REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A*  START OF SPECIFICATIONS   ******************************
+     A*                                                         *
+     A* PHYSICAL FILE MEMBER NAME:  QDSIGNON                    *
+     A*                                                         *
+     A*  END OF SPECIFICATIONS   ********************************
+     A*
+     A*
+     A**************************************************************************
+     A*                                Sign On                                 *
+     A*                                       System  . . . . . :   XXXXXXXX   *
+     A*                                       Subsystem . . . . :   XXXXXXXXXX *
+     A*                                       Display . . . . . :   XXXXXXXXXX *
+     A*                                                                        *
+     A*            User  . . . . . . . . . . . . . .   ___________             *
+     A*            Password  . . . . . . . . . . . .                           *
+     A*            Program/procedure . . . . . . . .   ___________             *
+     A*            Menu  . . . . . . . . . . . . . .   ___________             *
+     A*            Current library . . . . . . . . .   ___________             *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                                                        *
+     A*                                     (C) COPYRIGHT IBM CORP. 19XX, 19YY.*
+     A**************************************************************************
+     A*
+     A* |--------|---------|---------|---------|---------|---------|---------|--
+     A*  1       10        20        30        40        50        60        70
+     A*
+     A***********************************************************
+     A*                                                         *
+     A*  RECORD FORMAT -- NAME: SIGNON                          *
+     A*               FUNCTION: SIGN ON DISPLAY                 *
+     A*               INDICATORS USED: 01 02                    *
+     A*               FUNCTION KEYS USED: NONE                  *
+     A*               NUMBER OF I/O FIELDS:  11                 *
+     A*               KEYWORDS USED: DSPATR CHGINPDFT CLEAR     *
+     A*                              CHECK                      *
+     A*                                                         *
+     A***********************************************************
+     A*
+     A          R SIGNON
+     A*%%TS  SD  20240519  071825  QSECOFR     REL-V7R5M0  5770-WDS
+     A                                      CLEAR
+     A                                      BLINK
+     A                                  1 23'             Sign On             '
+     A                                      DSPATR(HI)
+     A                                  1  2'Sysnam:'
+     A            SYSNAME        8A  O  1 10
+     A                                  2  2'Subsystem:'
+     A            SBSNAME       10A  O  2 13
+     A                                  2 31'Display:'
+     A            DEVNAME       10A  O  2 40
+     A                                 22 14'User:'
+     A            USERID        10A  B 22 22
+     A  01                             22 39'Password:'
+     A  01        PASSWRD       10A  I 22 51DSPATR(ND)
+     A                                 23  1'Program/procedure:'
+     A                                      DSPATR(ND)
+     A            PROGRAM       10A  B 23 20CHECK(LC)
+     A                                      DSPATR(ND)
+     A                                 23 31'Menu:'
+     A                                      DSPATR(ND)
+     A            MENU          10A  B 23 37CHECK(LC)
+     A                                      DSPATR(ND)
+     A                                 23 48'CurLibrary:'
+     A                                      DSPATR(ND)
+     A            CURLIB        10A  B 23 60CHECK(LC)
+     A                                      DSPATR(ND)
+     A  02        QSNERROR      80A  O 24  1DSPATR(HI)
+     A            COPYRIGHT     40A  O 24 40DSPATR(HI)
+     A                                      DSPATR(ND)
+     A            UBUFFER      128A  H
+     A                                  1 66'Date:'
+     A                                  2 66'Time:'
+     A                                  1 72DATE
+     A                                      EDTCDE(Y)
+     A                                  2 72TIME
+     A                                  5 10'           *******   *     *      -
+     A                                       *    *    *******            '
+     A                                      COLOR(BLU)
+     A                                  6 10'        *******   ***      **     -
+     A                                      **     ***   *******          '
+     A                                      COLOR(BLU)
+     A                                  7 10'    ******  ********       *******-
+     A                                      **       ******    *****      '
+     A                                      COLOR(BLU)
+     A                                  8 10'   ****   **********       *******-
+     A                                      **       *********   *****    '
+     A                                      COLOR(BLU)
+     A                                  9 10'  ****  **************    ********-
+     A                                      ***     ************   ****   '
+     A                                      COLOR(BLU)
+     A                                 10 10' ****  ***************************-
+     A                                      **********************  ****  '
+     A                                      COLOR(BLU)
+     A                                 11 10'****  ****************************-
+     A                                      ***********************  **** '
+     A                                      COLOR(BLU)
+     A                                 12 10'****  ****************************-
+     A                                      ************************  ****'
+     A                                      COLOR(BLU)
+     A                                 13 10'****  ****************************-
+     A                                      ************************  ****'
+     A                                      COLOR(BLU)
+     A                                 14 10' ****  ***************************-
+     A                                      ************************  ****'
+     A                                      COLOR(BLU)
+     A                                 15 10'  ****  *******     ****  ********-
+     A                                      ***  ****     *********  **** '
+     A                                      COLOR(BLU)
+     A                                 16 10'   ****   *****      *      ******-
+     A                                      *      *      ********  ****  '
+     A                                      COLOR(BLU)
+     A                                 17 10'    *****   ****             *****-
+     A                                                   ******   *****   '
+     A                                      COLOR(BLU)
+     A                                 18 10'      *****   **              *** -
+     A                                                   **    ******     '
+     A                                      COLOR(BLU)
+     A                                 19 10'       ******   *              *  -
+     A                                                  *   *******       '
+     A                                      COLOR(BLU) 
