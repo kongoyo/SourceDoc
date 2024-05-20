@@ -1,0 +1,104 @@
+     A*%%TS  SD  20240520  133625  QSECOFR     REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R SFLDTA01                  SFL
+     A*%%TS  SD  20240520  133625  QSECOFR     REL-V7R5M0  5770-WDS
+     A            OPT            1A  I  9  5
+     A            DNAME     R        O  9 12REFFLD(PFR/NAME *LIBL/LF1)
+     A            DEXT      R        O  9 25REFFLD(PFR/EXT *LIBL/LF1)
+     A            DEMAIL    R        O 10 26REFFLD(PFR/EMAIL *LIBL/LF1)
+     A                                      COLOR(RED)
+     A          R SFLCTL01                  SFLCTL(SFLDTA01)
+     A*%%TS  SD  20240520  104940  QSECOFR     REL-V7R5M0  5770-WDS
+     A                                      SFLSIZ(9999)
+     A                                      SFLPAG(0005)
+     A                                      CA03(03 'Exit')
+     A                                      CA06(06 'Add')
+     A  30                                  SFLDSP
+     A  31                                  SFLDSPCTL
+     A  32                                  SFLCLR
+     A  33                                  SFLEND(*MORE)
+     A                                      SFLDROP(CA11)
+     A            RCDNBR         4S 0H      SFLRCDNBR(CURSOR)
+     A                                  2 27'Test Subfile 01'
+     A                                      COLOR(WHT)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  2 60DATE
+     A                                      EDTCDE(Y)
+     A                                  2 70TIME
+     A                                  3 17'Listing down all records of Test F-
+     A                                      ile 1'
+     A                                  8 12'Name'
+     A                                      COLOR(BLU)
+     A                                  8 25'Ext/Email'
+     A                                      COLOR(BLU)
+     A                                  8  4'Opt'
+     A                                      COLOR(BLU)
+     A                                  6  4'F3=Exit  F6=Add  C=Change  D=Delet-
+     A                                      e  F11=Fold/Drop'
+     A                                      COLOR(WHT)
+     A                                      DSPATR(BL)
+     A          R FOOTER
+     A                                      OVERLAY
+     A                                 23  5'F3=Exit'
+     A                                      COLOR(WHT)
+     A                                      DSPATR(PC)
+     A                                 23 14'F6=Add'
+     A                                      COLOR(WHT)
+     A                                      DSPATR(PC)
+     A          R ADDREC
+     A*%%TS  SD  20240518  032722  QSECOFR     REL-V7R3M0  5770-WDS
+     A                                      WINDOW(5 22 12 34)
+     A                                      CA12(12 'Cancel')
+     A                                      WDWBORDER((*CHAR '#-#||#-#'))
+     A                                  3  2'Name :'
+     A                                  5  2'Ext  :'
+     A                                  7  2'Email:'
+     A                                  1  1'           Add New Data           '
+     A                                      DSPATR(RI)
+     A                                      COLOR(WHT)
+     A            ADDMSG        30A  O  9  3COLOR(RED)
+     A                                 11  2'Enter = Add'
+     A                                      COLOR(WHT)
+     A                                 11 21'F12 = Cancel'
+     A                                      COLOR(WHT)
+     A            DNAME     R        I  3  9REFFLD(PFR/NAME *LIBL/LF1)
+     A            DEXT      R        I  5  9REFFLD(PFR/EXT *LIBL/LF1)
+     A            DEMAIL    R        I  7  9REFFLD(PFR/EMAIL *LIBL/LF1)
+     A          R UPDREC
+     A*%%TS  SD  20240518  032722  QSECOFR     REL-V7R3M0  5770-WDS
+     A                                      WINDOW(5 22 12 34)
+     A                                      CA12(12 'Cancel')
+     A                                      WDWBORDER((*CHAR '#-#||#-#'))
+     A                                  3  2'Name :'
+     A                                  5  2'Ext  :'
+     A                                  7  2'Email:'
+     A                                  1  1'           Update  Data           '
+     A                                      DSPATR(RI)
+     A                                      COLOR(WHT)
+     A            UPDMSG        30A  O  9  3COLOR(RED)
+     A                                 11  2'Enter = Update'
+     A                                      COLOR(WHT)
+     A                                 11 21'F12 = Cancel'
+     A                                      COLOR(WHT)
+     A            DNAME     R        B  3  9REFFLD(PFR/NAME *LIBL/LF1)
+     A            DEXT      R        B  5  9REFFLD(PFR/EXT *LIBL/LF1)
+     A            DEMAIL    R        B  7  9REFFLD(PFR/EMAIL *LIBL/LF1)
+     A          R DLTCNF
+     A*%%TS  SD  20240520  113928  QSECOFR     REL-V7R5M0  5770-WDS
+     A                                      WINDOW(5 22 12 34)
+     A                                      CA12(12 'Cancel')
+     A                                      WDWBORDER((*CHAR '#-#||#-#'))
+     A                                  3  2'Name :'
+     A                                  5  2'Ext  :'
+     A                                  7  2'Email:'
+     A                                  1  1'         Confirm Delete           '
+     A                                      DSPATR(RI)
+     A                                      COLOR(WHT)
+     A            DLTMSG        30A  O  9  3COLOR(RED)
+     A                                 11  2'Enter = Delete     F12 = Cancel'
+     A                                      COLOR(WHT)
+     A            DNAME     R        O  3  9REFFLD(PFR/NAME *LIBL/LF1)
+     A            DEXT      R        O  5  9REFFLD(PFR/EXT *LIBL/LF1)
+     A            DEMAIL    R        O  7  9REFFLD(PFR/EMAIL *LIBL/LF1) 

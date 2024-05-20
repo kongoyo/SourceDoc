@@ -1,0 +1,4 @@
+     A          R PFR
+     A            NAME           8A         COLHDG('English' 'Name')
+     A            EMAIL         20A         COLHDG('Email' 'Address')
+     A            EXT            4A         COLHDG('Ext.Phone') 
