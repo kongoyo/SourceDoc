@@ -1,7 +1,7 @@
 **free
 dcl-f prtf1 printer ;
 
-//write HEADER ;
+// write HEADER ;
 
 for Counter = 1 to 100 ;
   if (%error) ;
@@ -10,6 +10,6 @@ for Counter = 1 to 100 ;
   write(e) FORMAT02 ;
 endfor ;
 
-  write ENDREPORT ;
+write ENDREPORT ;
 
-  return ;
+return ;
