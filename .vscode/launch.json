@@ -3,6 +3,13 @@
     "configurations": [
 		{
 			"type": "java",
+			"name": "AS400JConecction",
+			"request": "launch",
+			"mainClass": "AS400JConecction",
+			"projectName": ""
+		},
+		{
+			"type": "java",
 			"name": "ContactToolApplication",
 			"request": "launch",
 			"mainClass": "com.contact.contact_tool.ContactToolApplication",
