@@ -24,7 +24,7 @@
         exsr  $loadsr;
       * write footer;
         opt = '';
-      *
+      * main subroutine
         dow *in03 = *Off;
           rcdnbr = 1;
           exfmt sflctl01;
@@ -51,8 +51,8 @@
         enddo;
         *Inlr = *On;
         return;
-      *
-        BegSr   $addsub;
+      * Add rcd subroutine
+        begsr $addsub;
           dname  = *Blanks;
           dext   = *Blanks;
           demail = *Blanks;
@@ -80,8 +80,8 @@
               demail = *Blanks;
             Endif;
           Enddo;
-        EndSr;
-      *
+        endsr;
+      * Update rcd subroutine
         begsr $updsub;
           updmsg = '';
           Dow *In12 = *Off;
@@ -105,8 +105,8 @@
               demail = *Blanks;
             Endif;
           Enddo;
-        EndSr;
-      *
+        endsr;
+      * Delete rcd subroutine
         begsr $dltsub;
           dltmsg = '';
           dow *in12 = *off;
@@ -133,7 +133,7 @@
             exfmt sflctl01;
           endif;
         endsr;
-      *
+      * Clear subroutine
         begsr $clearsr;
           *in30 = *off; //sfldsp
           *in31 = *off; //sfldspctl
@@ -146,8 +146,8 @@
           *in32 = *off;
           *in33 = *on ;
           rcdnbr = 0;
-        EndSr;
-      *
+        endsr;
+      * Loading subroutine
         begsr $loadsr;
           Setll *Start lf1;
           read pfr;
@@ -166,5 +166,5 @@
               read pfr;
             Enddo;
           endif;
-        EndSr;
-      /End-Free 
+        endsr;
+      /end-Free 
