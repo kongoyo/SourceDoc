@@ -1,0 +1,18 @@
+     A          R HEADER
+     A                                     1'PAGE HEADER'
+     A                                      SKIPB(001)
+      *****************************************************************
+     A          R FORMAT01
+     A                                     1'PROGRAM 1'
+     A                                      SPACEB(001)
+     A            COUNTER        3  0     +2EDTCDE(Z)
+      *****************************************************************
+     A          R FORMAT02
+     A                                     1'PROGRAM 2'
+     A                                      SPACEB(001)
+     A            COUNTER   R             +2REFFLD(COUNTER *SRC)
+     A                                      EDTCDE(Z)
+      *****************************************************************
+     A          R ENDREPORT
+     A                                     1'* * * END OF REPORT * * *'
+     A                                      SPACEB(001)
