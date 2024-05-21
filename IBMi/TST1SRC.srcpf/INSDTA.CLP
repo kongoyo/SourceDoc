@@ -12,17 +12,17 @@
              DCL VAR(&WORK2) TYPE(*INT) LEN(4) VALUE(0)
 
              /* RESULT - RANDOM NUMBER 1-1000 */
-             DCL        VAR(&RANDOM) TYPE(*DEC) LEN(4 0) VALUE(0)
-             DCL        VAR(&NAME) TYPE(*CHAR) LEN(8)
-             DCL        VAR(&EMAIL) TYPE(*CHAR) LEN(20)
-             DCL        VAR(&EXT) TYPE(*CHAR) LEN(4)
-             DCL        VAR(&CNT) TYPE(*DEC) LEN(3 0)
-             DCL        VAR(&CHRCNT) TYPE(*DEC) LEN(1 0)
-             DCL        VAR(&RANDOMC) TYPE(*CHAR) LEN(4)
-             DCL        VAR(&STMT) TYPE(*CHAR) LEN(1000)
-             DCL        VAR(&ERR) TYPE(*DEC) LEN(3 0)
+             DCL VAR(&RANDOM) TYPE(*DEC) LEN(4 0) VALUE(0)
+             DCL VAR(&NAME) TYPE(*CHAR) LEN(8)
+             DCL VAR(&EMAIL) TYPE(*CHAR) LEN(20)
+             DCL VAR(&EXT) TYPE(*CHAR) LEN(4)
+             DCL VAR(&CNT) TYPE(*DEC) LEN(3 0)
+             DCL VAR(&CHRCNT) TYPE(*DEC) LEN(1 0)
+             DCL VAR(&RANDOMC) TYPE(*CHAR) LEN(4)
+             DCL VAR(&STMT) TYPE(*CHAR) LEN(1000)
+             DCL VAR(&ERR) TYPE(*DEC) LEN(3 0)
 
-             DOUNTIL    COND(&CNT *GT 998)
+             DOUNTIL COND(&CNT *GT 998)
              /* CALL API */
              CALL PGM(QC3GENRN) PARM(&DATA &DATALEN &TYPE &PARITY &QUSEC)
 
