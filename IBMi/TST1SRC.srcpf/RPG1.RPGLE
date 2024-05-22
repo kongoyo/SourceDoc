@@ -1,170 +1,177 @@
-     HOPTION(*NODEBUGIO:*SRCSTMT)
-     HDFTACTGRP(*NO)
-     HDEBUG(*YES)
-      *
-     FLF1       UF A E           K DISK
-     FTSTSUBF01 CF   E             WORKSTN
-     F                                     SFILE(SFLDTA01:rcdnbr)
-      *
-     D RCDNBR          S              4S 0
-      *
-     C     kf1           klist
-     C                   kfld                    name
-     C                   kfld                    ext
-     C                   kfld                    email
-      *
-     C     kd1           klist
-     C                   kfld                    dname
-     C                   kfld                    dext
-     C                   kfld                    demail
-      /free
-      * set initial
-        rcdnbr = 1;
-        exsr  $clearsr;
-        exsr  $loadsr;
-      * write footer;
-        opt = '';
-      * main subroutine
-        dow *in03 = *Off;
-          rcdnbr = 1;
-          exfmt sflctl01;
-          if *in03 = *on;
-            *inlr = *on;
-            return;
-          endif;
-          select;
-            when *in06 = *On;
-              exsr $addsub;
-            other;
-              readc sfldta01;
-              if opt = 'C';
-                opt = '';
-                exsr $updsub;
-              elseif opt = 'D';
-                opt = '';
-                exsr $dltsub;
-              else;
-              endif;
-          endsl;
-          exsr $clearsr;
-          exsr $loadsr;
-        enddo;
-        *Inlr = *On;
-        return;
-      * Add rcd subroutine
-        begsr $addsub;
-          dname  = *Blanks;
-          dext   = *Blanks;
-          demail = *Blanks;
-          addmsg = *Blanks;
-          Dow  *In12 = *Off;
-            exfmt ADDREC;
-            if *in12 = *on;
-              *in12 = *off;
-              leavesr;
-            endif;
-            If dname = *Blanks;
-              addMSG = 'Name cannot be blanks.';
-            Elseif   dext = *Blanks;
-              addMSG = 'Ext cannot be blanks.';
-            Elseif   demail = *Blanks;
-              addMSG = 'Email cannot be blanks.';
-            Else;
-              name = dname;
-              ext = dext;
-              email = demail;
-              write pfr;
-              addMSG = 'Record added successfully...!';
-              dname  = *Blanks;
-              dext   = *Blanks;
-              demail = *Blanks;
-            Endif;
-          Enddo;
-        endsr;
-      * Update rcd subroutine
-        begsr $updsub;
-          updmsg = '';
-          Dow *In12 = *Off;
-            name = dname;
-            ext = dext;
-            email = demail;
-            exfmt updrec;
-            if *in12 = *on;
-              *in12 = *off;
-              leavesr;
-            endif;
-            chain kf1 pfr;
-            If %Found;
-              name = dname;
-              ext = dext;
-              email = demail;
-              update pfr;
-              updmsg = 'Record update successfully...!';
-              dname  = *Blanks;
-              dext   = *Blanks;
-              demail = *Blanks;
-            Endif;
-          Enddo;
-        endsr;
-      * Delete rcd subroutine
-        begsr $dltsub;
-          dltmsg = '';
-          dow *in12 = *off;
-            exfmt dltcnf;
-            if *in12 = *on;
-              *in12 = *off;
-              leavesr;
-            endif;
-            chain kd1 pfr;
-            delete pfr;
-            dltmsg = 'Record delete successfully...!';
-            dname  = *Blanks;
-            dext   = *Blanks;
-            demail = *Blanks;
-          enddo;
-          setll *loval lf1;
-          read pfr;
-          if %eof(lf1);
-            *in30 = *off;
-            *in31 = *on;
-            dname = *blanks;
-            dext = *blanks;
-            demail = *blanks;
-            exfmt sflctl01;
-          endif;
-        endsr;
-      * Clear subroutine
-        begsr $clearsr;
-          *in30 = *off; //sfldsp
-          *in31 = *off; //sfldspctl
-          *in32 = *on ; //sflclr
-          *in33 = *off;
-          write sflctl01;
+**free
+ctl-opt option(*nodebugio:*nosrcstmt);
+ctl-opt debug(*yes);
+ctl-opt dftactgrp(*no);
 
-          *in30 = *on ;
-          *in31 = *on ;
-          *in32 = *off;
-          *in33 = *on ;
-          rcdnbr = 0;
-        endsr;
-      * Loading subroutine
-        begsr $loadsr;
-          Setll *Start lf1;
-          read pfr;
-          if %eof(lf1);
-            *in30 = *off;
-            *in31 = *on;
-          else;
-            *in30 = *on;
-            *in31 = *on;
-            dow not %eof(lf1);
-              rcdnbr = rcdnbr + 1;
-              dname = name;
-              dext = ext;
-              demail = email;
-              write sfldta01;
-              read pfr;
-            Enddo;
-          endif;
-        endsr;
-      /end-Free 
+dcl-f lf1 disk(*ext) usage(*output:*delete) keyed;
+dcl-f tstsubf01 workstn(*ext) usage(*input:*output) sfile(sfldta01:rcdnbr);
+
+dcl-s rcdnbr packed(4:0);
+
+//  set initial
+
+rcdnbr = 1;
+exsr $clearsr;
+exsr $loadsr;
+// write footer;
+opt = *blanks;
+dow *in03 = *Off;
+  rcdnbr = 1;
+  exfmt sflctl01;
+  if *in03 = *on;
+    *inlr = *on;
+  endif;
+  select;
+    when *in06 = *On;
+      exsr $addsr;
+    other;
+      readc(e) sfldta01;
+      if opt = 'C';
+        opt = *blanks;
+        exsr $updsr;
+      elseif opt = 'D';
+        opt = *blanks;
+        exsr $dltsr;
+      else;
+      endif;
+  endsl;
+  exsr $clearsr;
+  exsr $loadsr;
+enddo;
+*Inlr = *On;
+return;
+//
+begsr $addsr;
+  dname  = *Blanks;
+  dext   = *Blanks;
+  demail = *Blanks;
+  addmsg = *Blanks;
+  Dow *IN12 = *Off;
+    exfmt(e) ADDREC;
+    if *IN12 = *on;
+      *IN12 = *off;
+      leavesr;
+    endif;
+    If dname = *Blanks;
+      addMSG = 'Name cannot be blanks.';
+    Elseif dext = *Blanks;
+      addMSG = 'Ext cannot be blanks.';
+    Elseif demail = *Blanks;
+      addMSG = 'Email cannot be blanks.';
+    Else;
+      name = dname;
+      ext = dext;
+      email = demail;
+      write PFR;
+      addMSG = 'Record added successfully...!';
+      dname  = *Blanks;
+      dext   = *Blanks;
+      demail = *Blanks;
+    Endif;
+  Enddo;
+endsr;
+//
+begsr $updsr;
+  updmsg = '';
+  Dow *IN12 = *Off;
+    name = dname;
+    ext = dext;
+    email = demail;
+    exfmt(e) updrec;
+    if *IN12 = *on;
+      *IN12 = *off;
+      leavesr;
+    endif;
+    chain (name:email:ext) pfr;
+    If %Found;
+      name = dname;
+      ext = dext;
+      email = demail;
+      update(e) pfr;
+      if %error;
+        exsr $errsr;
+        leavesr;
+      endif;
+      updmsg = 'Record update successfully...!';
+      dname  = *Blanks;
+      dext   = *Blanks;
+      demail = *Blanks;
+    Endif;
+  Enddo;
+endsr;
+//
+begsr $dltsr;
+  dltmsg = '';
+  dow *IN12 = *off;
+    exfmt(e) dltcnf;
+    if *IN12 = *on;
+      *IN12 = *off;
+      leavesr;
+    endif;
+    chain (dname:dext:demail) pfr;
+    delete(e) pfr;
+    if %error;
+      exsr $errsr;
+      leavesr;
+    endif;
+    dltmsg = 'Record delete successfully...!';
+    dname  = *Blanks;
+    dext   = *Blanks;
+    demail = *Blanks;
+  enddo;
+  setll *loval lf1;
+  read pfr;
+  if %eof(lf1);
+    *IN30 = *off;
+    *IN31 = *on;
+    dname = *blanks;
+    dext = *blanks;
+    demail = *blanks;
+    exfmt(e) sflctl01;
+  endif;
+endsr;
+//
+begsr $clearsr;
+  *IN30 = *off; //sfldsp
+  *IN31 = *off; //sfldspctl
+  *IN32 = *on ; //sflclr
+  *IN33 = *off; //sflend
+  write sflctl01;
+  *IN30 = *on ;
+  *IN31 = *on ;
+  *IN32 = *off;
+  *IN33 = *on ;
+  rcdnbr = 0;
+endsr;
+//
+begsr $loadsr;
+  Setll *Start lf1;
+  read pfr;
+  if %eof(lf1);
+    *IN30 = *off;
+    *IN31 = *on;
+  else;
+    *IN30 = *on;
+    *IN31 = *on;
+    dow not %eof(lf1);
+      rcdnbr = rcdnbr + 1;
+      dname = name;
+      dext = ext;
+      demail = email;
+      write sfldta01;
+      read pfr;
+    Enddo;
+  endif;
+endsr;
+//
+begsr $errsr;
+  select;
+    when %status=01021;
+      updmsg = 'Rcd duplicate. Update failed!!';
+      exfmt updrec;
+    when %status=01241;
+      dltmsg = 'Rcd not found. Delete failed!!';
+      exfmt dltcnf;
+    other;
+  endsl;
+endsr;

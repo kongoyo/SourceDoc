@@ -101,4 +101,4 @@
      A                                      COLOR(WHT)
      A            DNAME     R        O  3  9REFFLD(PFR/NAME *LIBL/LF1)
      A            DEXT      R        O  5  9REFFLD(PFR/EXT *LIBL/LF1)
-     A            DEMAIL    R        O  7  9REFFLD(PFR/EMAIL *LIBL/LF1) 
+     A            DEMAIL    R        O  7  9REFFLD(PFR/EMAIL *LIBL/LF1)
