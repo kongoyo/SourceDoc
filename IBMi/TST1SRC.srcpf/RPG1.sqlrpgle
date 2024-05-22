@@ -1,0 +1,194 @@
+**free
+ctl-opt option(*nodebugio:*nosrcstmt);
+ctl-opt debug(*yes);
+ctl-opt dftactgrp(*no);
+
+dcl-f lf1 disk(*ext) usage(*output:*delete) keyed;
+dcl-f tstsubf01 workstn(*ext) usage(*input:*output) sfile(sfldta01:rcdnbr);
+dcl-f prtf1 printer(*ext);
+
+dcl-s rcdnbr packed(4:0);
+dcl-s pageOverflow ind;
+dcl-s cnt int(3);
+dcl-s pagnbr int(3);
+dcl-s cmd varchar(512);
+
+//  set initial
+
+rcdnbr = 1;
+exsr $clearsr;
+exsr $loadsr;
+// write footer;
+opt = *blanks;
+dow *in03 = *Off;
+  rcdnbr = 1;
+  exfmt sflctl01;
+  if *in03 = *on;
+    *inlr = *on;
+  endif;
+  select;
+    when *in06 = *on;
+      exsr $addsr;
+    when *in13 = *on;
+      exsr $rptsr;
+    when *in16 = *on;
+      exsr $chkrptsr;
+    other;
+      readc(e) sfldta01;
+      if opt = 'C';
+        opt = *blanks;
+        exsr $updsr;
+      elseif opt = 'D';
+        opt = *blanks;
+        exsr $dltsr;
+      else;
+      endif;
+  endsl;
+  exsr $clearsr;
+  exsr $loadsr;
+enddo;
+*Inlr = *On;
+return;
+//
+begsr $chkrptsr;
+  exec sql call qsys2.qcmdexc('wrksplf');
+endsr;
+//
+begsr $rptsr;
+  exec sql call qsys2.qcmdexc('SBMJOB CMD(CALL PGM(*libl/PRTF1R)) JOB(PRTF1R)');
+endsr;
+//
+begsr $addsr;
+  dname  = *Blanks;
+  dext   = *Blanks;
+  demail = *Blanks;
+  addmsg = *Blanks;
+  Dow *IN12 = *Off;
+    exfmt(e) ADDREC;
+    if *IN12 = *on;
+      *IN12 = *off;
+      leavesr;
+    endif;
+    If dname = *Blanks;
+      addMSG = 'Name cannot be blanks.';
+    Elseif dext = *Blanks;
+      addMSG = 'Ext cannot be blanks.';
+    Elseif demail = *Blanks;
+      addMSG = 'Email cannot be blanks.';
+    Else;
+      name = dname;
+      ext = dext;
+      email = demail;
+      write PFR;
+      addMSG = 'Record added successfully...!';
+      dname  = *Blanks;
+      dext   = *Blanks;
+      demail = *Blanks;
+    Endif;
+  Enddo;
+endsr;
+//
+begsr $updsr;
+  updmsg = '';
+  Dow *IN12 = *Off;
+    name = dname;
+    ext = dext;
+    email = demail;
+    exfmt(e) updrec;
+    if *IN12 = *on;
+      *IN12 = *off;
+      leavesr;
+    endif;
+    chain (name:email:ext) pfr;
+    If %Found;
+      name = dname;
+      ext = dext;
+      email = demail;
+      update(e) pfr;
+      if %error;
+        exsr $errsr;
+        leavesr;
+      endif;
+      updmsg = 'Record update successfully...!';
+      dname  = *Blanks;
+      dext   = *Blanks;
+      demail = *Blanks;
+    Endif;
+  Enddo;
+endsr;
+//
+begsr $dltsr;
+  dltmsg = '';
+  dow *IN12 = *off;
+    exfmt(e) dltcnf;
+    if *IN12 = *on;
+      *IN12 = *off;
+      leavesr;
+    endif;
+    chain (dname:dext:demail) pfr;
+    delete(e) pfr;
+    if %error;
+      exsr $errsr;
+      leavesr;
+    endif;
+    dltmsg = 'Record delete successfully...!';
+    dname  = *Blanks;
+    dext   = *Blanks;
+    demail = *Blanks;
+  enddo;
+  setll *loval lf1;
+  read pfr;
+  if %eof(lf1);
+    *IN30 = *off;
+    *IN31 = *on;
+    dname = *blanks;
+    dext = *blanks;
+    demail = *blanks;
+    exfmt(e) sflctl01;
+  endif;
+endsr;
+//
+begsr $clearsr;
+  *IN30 = *off; //sfldsp
+  *IN31 = *off; //sfldspctl
+  *IN32 = *on ; //sflclr
+  *IN33 = *off; //sflend
+  write sflctl01;
+  *IN30 = *on ;
+  *IN31 = *on ;
+  *IN32 = *off;
+  *IN33 = *on ;
+  rcdnbr = 0;
+endsr;
+//
+begsr $loadsr;
+  Setll *Start lf1;
+  read pfr;
+  if %eof(lf1);
+    *IN30 = *off;
+    *IN31 = *on;
+  else;
+    *IN30 = *on;
+    *IN31 = *on;
+    dow not %eof(lf1);
+      rcdnbr = rcdnbr + 1;
+      dname = name;
+      dext = ext;
+      demail = email;
+      write sfldta01;
+      read pfr;
+    Enddo;
+  endif;
+endsr;
+//
+begsr $errsr;
+  select;
+    when %status=01021;
+      updmsg = 'Rcd duplicate. Update failed!!';
+      exfmt updrec;
+    when %status=01241;
+      dltmsg = 'Rcd not found. Delete failed!!';
+      exfmt dltcnf;
+    other;
+  endsl;
+endsr;

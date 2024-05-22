@@ -1,0 +1,22 @@
+     A          R HEADER
+     A                                      SPACEB(001)
+     A                                    35'PAGE HEADER'
+     A                                   +20DATE(*SYS)
+     A                                   +10'PAGE:'
+     A                                    +1PAGNBR
+     A                                      SPACEA(001)
+      *****************************************************************
+     A          R PDTA
+     A                                    10
+     A                                      'PROGRAM 1'
+     A                                      SPACEB(001)
+     A            NAME      R        O   +10REFFLD(PFR/NAME *LIBL/LF1)
+     A            EXT       R        O   +10REFFLD(PFR/EXT *LIBL/LF1)
+     A            EMAIL     R        O   +10REFFLD(PFR/EMAIL *LIBL/LF1)
+     A                                      SPACEA(001)
+      *****************************************************************
+     A          R ENDREPORT
+     A                                      SPACEB(002)
+     A                                    54
+     A                                      '* * * END OF REPORT * * *'
+     A                                      SPACEB(001)
