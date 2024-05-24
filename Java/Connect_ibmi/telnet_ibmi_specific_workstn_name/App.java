@@ -10,14 +10,14 @@ public class App {
     public static void main(String[] args) throws Exception {
         try {
             String IBM_I_HOST = "172.16.14.61"; // Replace with the actual IBM i host IP address
-            int IBM_I_PORT = 23; // Replace with the actual IBM i port number
+          //int IBM_I_PORT = 23; // Replace with the actual IBM i port number
             String AS400_USER = "QSECOFR"; // Replace with the actual IBM i user ID
             String AS400_PASSWORD = "password"; // Replace with the actual IBM i password
             int STARTING_DIGIT = 0; // Replace with the starting digit for the workstation IDs
             int ENDING_DIGIT = 99; // Replace with the ending digit for the workstation IDs
 
             String DRIVER = "com.ibm.as400.access.AS400JDBCDriver";
-            String URL = "jdbc:as400://172.16.13.34";
+            String URL = "jdbc:as400://" + IBM_I_HOST;
 
             System.out.println("Trying to connect...");
 
