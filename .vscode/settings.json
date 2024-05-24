@@ -8,5 +8,14 @@
     },
     "python.formatting.provider": "none",
     "java.compile.nullAnalysis.mode": "automatic",
-    "remote.SSH.defaultForwardedPorts": []
+    "remote.SSH.defaultForwardedPorts": [],
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.project.sourcePaths": [
+        "Java/Connect_ibmi/telnet_ibmi_specific_workstn_name"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/tmp/jt400.jar",
+        "/root/SourceCode/jt400.jar"
+    ]
 }
