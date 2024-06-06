@@ -10,10 +10,7 @@
     "java.compile.nullAnalysis.mode": "automatic",
     "remote.SSH.defaultForwardedPorts": [],
     "java.dependency.packagePresentation": "hierarchical",
-    "java.project.sourcePaths": [
-        "Java/connexeccmd",
-        "Java/Connect_ibmi"
-    ],
+    "java.project.sourcePaths": [],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/tmp/jt400.jar",
