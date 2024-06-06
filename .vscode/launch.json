@@ -3,6 +3,20 @@
     "configurations": [
 		{
 			"type": "java",
+			"name": "ibmiconn",
+			"request": "launch",
+			"mainClass": "ibmiconn",
+			"projectName": ""
+		},
+		{
+			"type": "java",
+			"name": "ibmiconn",
+			"request": "launch",
+			"mainClass": "ibmiconn",
+			"projectName": "SourceDoc_d414ec34"
+		},
+		{
+			"type": "java",
 			"name": "App",
 			"request": "launch",
 			"mainClass": "telnet_ibmi_specific_workstn_name.src.App",

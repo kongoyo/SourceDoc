@@ -11,7 +11,8 @@
     "remote.SSH.defaultForwardedPorts": [],
     "java.dependency.packagePresentation": "hierarchical",
     "java.project.sourcePaths": [
-        "Java/Connect_ibmi/telnet_ibmi_specific_workstn_name"
+        "Java/connexeccmd",
+        "Java/Connect_ibmi"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
