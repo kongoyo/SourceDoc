@@ -1,4 +1,6 @@
-import ibm_db
+from operator import index
+import pyodbc
+import pandas as pd
 import random
 from faker import Faker
 import time
@@ -7,31 +9,25 @@ import time
 fake = Faker()
 
 # 連接到IBMi
-conn_str = "DATABASE=YOUR_DATABASE;HOSTNAME=YOUR_HOST;PORT=50000;PROTOCOL=TCPIP;UID=YOUR_USER;PWD=YOUR_PASSWORD;"
-conn = ibm_db.connect(conn_str, "", "")
+conn = pyodbc.connect(
+    driver='{IBM i Access ODBC Driver}',
+    system='172.16.14.61',
+    uid='QSECOFR',
+    pwd='PASSWORD')
 
 if conn:
     print("Connected to the database")
 
     # 生成10萬筆測試資料
-    for _ in range(100000):
-        cus_name = fake.unique.name()
-        cus_age = random.randint(18, 90)
-        cus_birth = fake.date_of_birth(tzinfo=None, minimum_age=18, maximum_age=90)
-        cus_liveAddress = fake.address()
-        cus_regAddress = fake.address()
-        cus_emailAddress = fake.unique.email()
-        cus_bloodType = random.choice(['A', 'B', 'AB', 'O'])
-        cus_companyName = fake.company()
-
-        insert_query = f"""
-        INSERT INTO Customer (cus_name, cus_age, cus_birth, cus_liveAddress, cus_regAddress, cus_emailAddress, cus_bloodType, cus_companyName)
-        VALUES ('{cus_name}', {cus_age}, '{cus_birth}', '{cus_liveAddress}', '{cus_regAddress}', '{cus_emailAddress}', '{cus_bloodType}', '{cus_companyName}')
-        """
-
-        try:
-            ibm_db.exec_immediate(conn, insert_query)
-        except Exception as e:
-            print(f"Error inserting data: {e}")
-else:
-    print("Failed to connect to the database")
+cus_name = fake.unique.name()
+cus_age = random.randint(18, 90)
+cus_birth = fake.date_of_birth(tzinfo=None, minimum_age=18, maximum_age=90)
+cus_liveAddress = fake.address()
+cus_regAddress = fake.address()
+cus_emailAddress = fake.unique.email()
+cus_bloodType = random.choice(['A', 'B', 'AB', 'O'])
+cus_companyName = fake.company()
+cursor = conn.cursor()
+sql = str("select * from ddscinfo.customers")
+data = pd.read_sql_query(sql=sql, con=conn, index_col='CUSTOMER_ID')
+print(data)
