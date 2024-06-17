@@ -6,8 +6,8 @@ from urllib.request import urlopen
 option: Options = Options()
 # 操作網頁是不顯示網頁 manipulate the browser invisibly
 # option.add_argument("-headless")
-driver_path = 'C:/Users/User/Downloads/chromedriver_win32/chromedriver.exe'
-chrome = webdriver.Chrome(driver_path, options=option)
+driver_path = 'E:/Downloads/chrome-win64/chrome-win64/chrome.exe'
+chrome = webdriver.Chrome()
 chrome.get("https://www.ibm.com/servers/eserver/ess/landing/index.html")
 chrome.find_element()
 email = chrome.find_element("id", "email")

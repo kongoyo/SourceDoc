@@ -7,19 +7,23 @@ public class ibmiconn {
             String DRIVER = "com.ibm.as400.access.AS400JDBCDriver";
             String URL = "jdbc:as400://172.16.14.61";
             Class.forName(DRIVER);
-            Connection conn = DriverManager.getConnection(URL,"QSECOFR", "PASSWORD");
+            Connection conn = DriverManager.getConnection(URL, "QSECOFR", "PASSWORD");
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("select AMBSYSN, AMBLIB, AMBFILE, AMBNAME, AMBNRCD, BMBSYSN, BMBLIB, BMBFILE, BMBNAME, BMBNRCD from DDSCINFO.CMPPFMBR");
+            ResultSet rs = stmt.executeQuery(
+                    "select AMBSYSN, AMBLIB, AMBFILE, AMBNAME, AMBNRCD, BMBSYSN, BMBLIB, BMBFILE, BMBNAME, BMBNRCD from DDSCINFO.CMPPFMBR");
             System.out.println("Connected with " + conn);
-         // System.out.println("employee_code, employee_name, monthly_salary");
-            while(rs.next()) {
-                System.out.println(rs.getString("AMBSYSN")+" "+rs.getString("AMBLIB")+" "+rs.getString("BMBSYSN")+" "+rs.getString("BMBLIB"));
-           }
-           conn.close();
-           System.exit(0);
-        }
-        catch(Exception e) {
-           System.out.println(e);
+            // System.out.println("employee_code, employee_name, monthly_salary");
+            while (rs.next()) {
+                if (rs.getString("BMBSYSN") != null || rs.getString("BMBLIB") != null
+                        || rs.getString("BMBFILE") != null) {
+                    System.out.println(rs.getString("AMBSYSN") + " " + rs.getString("AMBLIB") + " " + rs.getString("AMBFILE") + " "
+                            + rs.getString("BMBSYSN") + " " + rs.getString("BMBLIB") + " " + rs.getString("BMBFILE"));
+                }
+            }
+            conn.close();
+            System.exit(0);
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 }
