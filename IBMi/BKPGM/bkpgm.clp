@@ -1,10 +1,10 @@
-PGM
+ï»¿PGM
 
-/* ©w¸qÅÜ¼Æ */
-/* volnum ºÏ±a½s¸¹ */
-/* Y ¦~³Æ¥÷ */
-/* M ¤ë³Æ¥÷ */
-/* D ¤é³Æ¥÷ */
+/* å®šç¾©è®Šæ•¸ */
+/* volnum ç£å¸¶ç·¨è™Ÿ */
+/* Y å¹´å‚™ä»½ */
+/* M æœˆå‚™ä»½ */
+/* D æ—¥å‚™ä»½ */
 
 dcl var(&volnum) type(*char) len(6)
 dcl var(&dof) type(*char) len(4)
@@ -16,10 +16,10 @@ dcl var(&foredat) type(*char) len(6)
 dcl var(&datfmt) type(*char) len(3)
 dcl var(&datsep) type(*char) len(1)
 
-/* ­pºâ¬P´Á´X */
+/* è¨ˆç®—æ˜ŸæœŸå¹¾ */
 RTVSYSVAL SYSVAL(QDAYOFWEEK) RTNVAR(&dof)
 
-/* ­pºâ¬O§_¬°·í¤ë³Ì«á¤@¤Ñ */
+/* è¨ˆç®—æ˜¯å¦ç‚ºç•¶æœˆæœ€å¾Œä¸€å¤© */
 rtvsysval SYSVAL(QDATFMT) RTNVAR(&datfmt)
 rtvsysval SYSVAL(QDATSEP) RTNVAR(&datsep)
 cvtdat DATE(&curdat) FROMFMT(&datfmt) TOFMT(*JUL) TOVAR(&curjdat)
@@ -31,9 +31,9 @@ enddo
 
 
 
-/* ­pºâºÏ±a */
-/* °õ¦æ³Æ¥÷ */
-/* ±H°e³qª¾ */
+/* è¨ˆç®—ç£å¸¶ */
+/* åŸ·è¡Œå‚™ä»½ */
+/* å¯„é€é€šçŸ¥ */
 
 
 ENDPGM
