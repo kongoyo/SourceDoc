@@ -1,100 +1,125 @@
 {
     "version": "0.2.0",
     "configurations": [
-		{
-			"type": "java",
-			"name": "ibmiconn",
-			"request": "launch",
-			"mainClass": "ibmiconn",
-			"projectName": ""
-		},
-		{
-			"type": "java",
-			"name": "ibmiconn",
-			"request": "launch",
-			"mainClass": "ibmiconn",
-			"projectName": "SourceDoc_d414ec34"
-		},
-		{
-			"type": "java",
-			"name": "App",
-			"request": "launch",
-			"mainClass": "telnet_ibmi_specific_workstn_name.src.App",
-			"projectName": "SourceDoc_d414ec34"
-		},
-		{
-			"type": "java",
-			"name": "App",
-			"request": "launch",
-			"mainClass": "telnet_ibmi_specific_workstn_name.App",
-			"projectName": "SourceDoc_d414ec34"
-		},
-		{
-			"type": "java",
-			"name": "App",
-			"request": "launch",
-			"mainClass": "App",
-			"projectName": ""
-		},
-		{
-			"type": "java",
-			"name": "AS400JConecction",
-			"request": "launch",
-			"mainClass": "AS400JConecction",
-			"projectName": ""
-		},
-		{
-			"type": "java",
-			"name": "ContactToolApplication",
-			"request": "launch",
-			"mainClass": "com.contact.contact_tool.ContactToolApplication",
-			"projectName": "contact_tool"
-		},
-		{
-			"name": "Run Extension",
-			"type": "extensionHost",
-			"request": "launch",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}"
-			],
-			"outFiles": [
-				"${workspaceFolder}/dist/**/*.js"
-			],
-			"sourceMaps": true,
-			"preLaunchTask": "${defaultBuildTask}"
-		},
-		{
-			"name": "Extension Tests (All)",
-			"type": "extensionHost",
-			"request": "launch",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}"
-			],
-			"outFiles": [
-				"${workspaceFolder}/dist/**/*.js"
-			],
-			"sourceMaps": true,
-			"preLaunchTask": "${defaultBuildTask}",
-			"env": {
-				"testing": "true"
-			}
-		},
-		{
-			"name": "Extension Tests (Individual)",
-			"type": "extensionHost",
-			"request": "launch",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}"
-			],
-			"outFiles": [
-				"${workspaceFolder}/dist/**/*.js"
-			],
-			"sourceMaps": true,
-			"preLaunchTask": "${defaultBuildTask}",
-			"env": {
-				"testing": "true",
-				"individual": "true"
-			}
-		}
-	]
+        {
+            "type": "java",
+            "name": "ibmiconn",
+            "request": "launch",
+            "mainClass": "ibmiconn",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ibmiconn",
+            "request": "launch",
+            "mainClass": "ibmiconn",
+            "projectName": "SourceDoc_d414ec34"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "telnet_ibmi_specific_workstn_name.src.App",
+            "projectName": "SourceDoc_d414ec34"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "telnet_ibmi_specific_workstn_name.App",
+            "projectName": "SourceDoc_d414ec34"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "AS400JConecction",
+            "request": "launch",
+            "mainClass": "AS400JConecction",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ContactToolApplication",
+            "request": "launch",
+            "mainClass": "com.contact.contact_tool.ContactToolApplication",
+            "projectName": "contact_tool"
+        },
+        {
+            "name": "Run Extension",
+            "type": "extensionHost",
+            "request": "launch",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "${defaultBuildTask}"
+        },
+        {
+            "name": "Extension Tests (All)",
+            "type": "extensionHost",
+            "request": "launch",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "${defaultBuildTask}",
+            "env": {
+                "testing": "true"
+            }
+        },
+        {
+            "name": "Extension Tests (Individual)",
+            "type": "extensionHost",
+            "request": "launch",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "${defaultBuildTask}",
+            "env": {
+                "testing": "true",
+                "individual": "true"
+            }
+        },
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "輸入程式名稱，例如 ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path/to/gdb",
+            "setupCommands": [
+                {
+                    "description": "啟用 gdb 的美化顯示",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "將反組譯碼變體設為 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
 }

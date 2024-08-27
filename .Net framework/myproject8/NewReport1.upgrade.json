@@ -1,0 +1,73 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": true
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-08-26T06:02:20.7014681Z",
+  "analysisEndTime": "2024-08-26T06:02:39.0456526Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 1,
+      "incidents": 1,
+      "effort": 1
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 1,
+        "Optional": 0,
+        "Potential": 0,
+        "Information": 0
+      },
+      "category": {
+        "Project": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "myproject8.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "ruleInstances": [
+        {
+          "incidentId": "8636aac9-0c96-4ea2-ae55-4316ca252086",
+          "ruleId": "Project.0001",
+          "projectPath": "myproject8.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "myproject8.csproj"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0001": {
+      "id": "Project.0001",
+      "description": "\u5C08\u6848\u6A94\u5FC5\u9808\u8F49\u63DB\u6210 SDK \u6A23\u5F0F\u3002\u65B0\u5F0F .NET \u67B6\u69CB\u5C08\u6848\u9700\u8981\u8B8A\u66F4\u5C08\u6848\u6A94\u683C\u5F0F\uFF0C\u4E26\u4F7F\u7528\u8207\u5C08\u6848\u8B8A\u9AD4\u548C\u529F\u80FD\u5C0D\u61C9\u7684 SDK\u3002",
+      "label": "\u5C08\u6848\u6A94\u5FC5\u9808\u8F49\u63DB\u6210 SDK \u6A23\u5F0F",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "\u5F9E .NET Framework \u5230 .NET \u7684\u79FB\u690D\u6982\u89C0",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET \u5C08\u6848 SDK",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}

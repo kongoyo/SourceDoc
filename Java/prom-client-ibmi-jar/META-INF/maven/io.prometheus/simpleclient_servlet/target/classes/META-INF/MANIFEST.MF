@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1723855699246
+Build-Jdk: 21.0.3
+Built-By: kongo
+Bundle-Description: HTTP servlet exporter for the simpleclient.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Prometheus Java Simpleclient Servlet - Javax
+Bundle-SymbolicName: io.prometheus.simpleclient_servlet
+Bundle-Version: 0.16.0
+Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-2.1.0.20130426-122213

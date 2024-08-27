@@ -1,0 +1,5 @@
+DEBUG: Executing D:\TOOLS\Microsoft\VisualStudio\NuGet\packages\ikvm.msbuild.tools.runtime.win-x64\8.10.0\ikvmc\net8.0\win-x64\ikvmc.exe "@D:\Downloads\SourceDoc\.Net framework\myproject8\obj\Debug\net8.0-windows\ikvm\stage\1\14bfe185338c38360e30f7c0ea0f1775\jt400.dll.rsp"
+ERROR: warning IKVMC0100: Class "javax.servlet.http.HttpServlet" not found
+ERROR: warning IKVMC0100: Class "com.ibm.as400.access.UnixSocketUser" not found
+ERROR: warning IKVMC0100: Class "com.ibm.as400.access.NLSImplNative" not found
+ERROR: warning IKVMC0100: Class "com.ibm.as400.access.AS400ImplNative" not found

@@ -15,5 +15,7 @@
         "lib/**/*.jar",
         "/tmp/jt400.jar",
         "/root/SourceCode/jt400.jar"
-    ]
+    ],
+    "dotnet.preferCSharpExtension": true,
+    "dotnet.defaultSolution": "disable"
 }
