@@ -1085,3 +1085,9 @@ Java/JDK/jdk-18.0.2+9/lib/security/cacerts
 Java/JDK/jdk-18.0.2+9/lib/security/default.policy
 Java/JDK/jdk-18.0.2+9/lib/security/public_suffix_list.dat
 Python/get_from_ibm/chromedriver.exe
+
+.fake
+/.Net framework/CM_com.ddsc.bu4.jt4h
+/.Net framework/DS_com.ddsc.bu4.netcore.common
+/.Net framework/DS_com.ddsc.bu4.netcore.logwriter
+/.Net framework/jt4h測試V2.7
