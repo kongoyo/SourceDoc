@@ -9,7 +9,7 @@
     "python.formatting.provider": "none",
     "java.compile.nullAnalysis.mode": "automatic",
     "remote.SSH.defaultForwardedPorts": [],
-    "java.dependency.packagePresentation": "hierarchical",
+    "java.dependency.packagePresentation": "flat",
     "java.project.sourcePaths": [],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
@@ -17,5 +17,7 @@
         "/root/SourceCode/jt400.jar"
     ],
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "disable"
+    "dotnet.defaultSolution": "disable",
+    "java.project.explorer.showNonJavaResources": false,
+    "java.format.settings.url": ".vscode/java-formatter.xml"
 }
