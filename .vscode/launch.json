@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.example.connibmi.App",
+            "projectName": "com.example.connibmi-connibmi"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.example.connibmi.App",
+            "projectName": "connibmi"
+        },
+        {
+            "type": "java",
             "name": "ibmiconn",
             "request": "launch",
             "mainClass": "ibmiconn",
