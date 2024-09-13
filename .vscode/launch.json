@@ -5,6 +5,26 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "com.psd.App",
+            "projectName": "mfa"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.example.App",
+            "projectName": "mfa"
+        },
+        {
+            "type": "java",
+            "name": "DemoApplication",
+            "request": "launch",
+            "mainClass": "com.example.mfa.demo.DemoApplication"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "com.example.connibmi.App",
             "projectName": "com.example.connibmi-connibmi"
         },
