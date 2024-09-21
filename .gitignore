@@ -12040,3 +12040,5 @@ Python/db400/lib/python3.12/site-packages/shiboken6-6.7.2.dist-info/WHEEL
 Python/db400/lib64
 Python/db400/pyvenv.cfg
 Python/db400/test1.xslx
+jt400-20.0.7.jar
+*.pyc
