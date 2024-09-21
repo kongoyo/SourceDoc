@@ -23,7 +23,7 @@ import sys
 import platform
 
 # 使用 os.path.join 來創建路徑，以確保跨平台兼容性
-jt400_path = os.path.join("D:\\", "Downloads", "SourceDoc", "jt400-20.0.7.jar")
+jt400_path = os.path.join("C:\\", "Users", "User", "Downloads", "jt400-20.0.7.jar")
 
 # 檢查文件是否存在
 if not os.path.exists(jt400_path):
