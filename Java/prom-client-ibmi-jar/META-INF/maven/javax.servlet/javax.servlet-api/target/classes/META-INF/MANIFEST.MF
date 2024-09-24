@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Created-By: 21.0.4 (Eclipse Adoptium)
+Tool: Bnd-0.0.255
+Bnd-LastModified: 1727064156886
+Bundle-Version: 3.1.0
+Bundle-SymbolicName: javax.servlet-api
+Bundle-License: https://glassfish.dev.java.net/nonav/public/CDDL+GPL.htm
+ l
+Bundle-DocURL: https://glassfish.dev.java.net
+Bundle-Description: Java(TM) Servlet 3.1 API Design Specification
+Implementation-Version: 3.1.0
+Specification-Vendor: Oracle Corporation
+Implementation-Vendor: GlassFish Community
+Implementation-Vendor-Id: org.glassfish
+Extension-Name: javax.servlet
+Bundle-Vendor: GlassFish Community
+Specification-Version: 3.1
+Bundle-Name: Java Servlet API
+

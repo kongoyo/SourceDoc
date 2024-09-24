@@ -30,7 +30,7 @@ if not os.path.exists(jt400_path):
     print(f"錯誤：jt400.jar 文件未找到：{jt400_path}")
     sys.exit(1)
 
-java_home = "/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home"
+java_home="C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.4.7-hotspot\\"
 os.environ["JAVA_HOME"] = java_home
 os.environ["PATH"] = f"{java_home}/bin:{os.environ.get('PATH', '')}"
 

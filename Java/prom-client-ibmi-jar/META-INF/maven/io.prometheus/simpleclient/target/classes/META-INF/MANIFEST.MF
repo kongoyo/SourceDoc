@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1723855719703
-Build-Jdk: 21.0.3
-Built-By: kongo
+Bnd-LastModified: 1727064200613
+Build-Jdk: 21.0.4
+Built-By: User
 Bundle-Description: Core instrumentation library for the simpleclient.
 Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
 Bundle-ManifestVersion: 2

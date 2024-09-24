@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1723855764982
-Build-Jdk: 21.0.3
-Built-By: kongo
+Bnd-LastModified: 1727064259200
+Build-Jdk: 21.0.4
+Built-By: User
 Bundle-Description: Common code used by various modules of the Simplecli
  ent.
 Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
