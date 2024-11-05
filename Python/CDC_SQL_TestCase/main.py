@@ -1,4 +1,6 @@
-﻿import jaydebeapi  # 確保已安裝此庫
+﻿import tkinter as tk  # 新增tkinter庫
+from tkinter import messagebox  # 新增messagebox庫
+import jaydebeapi  # 確保已安裝此庫
 import jpype
 
 def connect_to_ibm_i():
@@ -23,28 +25,36 @@ def connect_to_ibm_i():
 
 def main_menu():
     connection = connect_to_ibm_i()  # 在主選單之前連線到IBM i主機
-    while True:
-        print("選擇操作:")
-        print("1. 建立測試表格")
-        print("2. 亂數新增1000筆紀錄")
-        print("3. 隨機更新500筆紀錄")
-        print("4. 隨機刪除500筆紀錄")
-        print("5. 退出")
 
-        choice = input("請輸入選擇 (1-5): ")
+    # 創建主視窗
+    root = tk.Tk()
+    root.title("操作選單")
 
-        if choice == '1':
-            create_test_table(connection)
-        elif choice == '2':
-            insert_random_records(connection)
-        elif choice == '3':
-            update_random_records(connection)
-        elif choice == '4':
-            delete_random_records(connection)
-        elif choice == '5':
-            break
-        else:
-            print("無效的選擇，請重試。")
+    # 定義按鈕的回調函數
+    def create_table():
+        create_test_table(connection)
+
+    def insert_records():
+        insert_random_records(connection)
+
+    def update_records():
+        update_random_records(connection)
+
+    def delete_records():
+        delete_random_records(connection)
+
+    def exit_program():
+        root.quit()
+
+    # 創建按鈕
+    tk.Button(root, text="建立測試表格", command=create_table).pack(pady=10)
+    tk.Button(root, text="亂數新增1000筆紀錄", command=insert_records).pack(pady=10)
+    tk.Button(root, text="隨機更新500筆紀錄", command=update_records).pack(pady=10)
+    tk.Button(root, text="隨機刪除500筆紀錄", command=delete_records).pack(pady=10)
+    tk.Button(root, text="退出", command=exit_program).pack(pady=10)
+
+    # 啟動主循環
+    root.mainloop()
 
 # 其他函數的定義
 def create_test_table(connection):
