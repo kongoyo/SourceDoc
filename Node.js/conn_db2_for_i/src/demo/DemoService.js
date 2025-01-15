@@ -1,8 +1,8 @@
 const DatabaseService = require('../services/DatabaseService');
 
 class DemoService {
-  constructor() {
-    this.dbService = new DatabaseService();
+  constructor(hostName = null) {
+    this.dbService = new DatabaseService(hostName);
   }
 
   async runDemo(schema, table) {

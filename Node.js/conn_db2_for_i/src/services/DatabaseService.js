@@ -2,8 +2,8 @@ const ConnectionPool = require('../database/ConnectionPool');
 const DatabaseError = require('../errors/DatabaseError');
 
 class DatabaseService {
-  constructor() {
-    this.pool = ConnectionPool.getInstance().getPool();
+  constructor(hostName = null) {
+    this.pool = ConnectionPool.getInstance(hostName);
   }
 
   async query(schema, table) {
@@ -27,14 +27,14 @@ class DatabaseService {
 
   async addRandomRecord(schema, table) {
     try {
-      const randomData = {
-        TEAM: `Team_${Math.floor(Math.random() * 9000) + 1000}`,
-        EMAILADDR: `team_${Math.floor(Math.random() * 9000) + 1000}@example.com`
-      };
-      
+      const randomNum = Math.floor(Math.random() * 9000) + 1000;
       const sql = `INSERT INTO ${schema}.${table} (TEAM, EMAILADDR) VALUES (?, ?)`;
-      const result = await this.pool.update(sql, [randomData.TEAM, randomData.EMAILADDR]);
-      console.log('新增成功');
+      const values = [
+        `Team_${randomNum}`,
+        `team_${randomNum}@example.com`
+      ];
+      
+      const result = await this.pool.execute(sql, values);
       return result;
     } catch (err) {
       throw new DatabaseError('新增失敗', 'INSERT', err);
@@ -57,7 +57,7 @@ class DatabaseService {
       };
       
       const sql = `UPDATE ${schema}.${table} SET TEAM = ?, EMAILADDR = ? WHERE TEAM = ?`;
-      const result = await this.pool.update(sql, [updateData.TEAM, updateData.EMAILADDR, randomRecord.TEAM]);
+      const result = await this.pool.execute(sql, [updateData.TEAM, updateData.EMAILADDR, randomRecord.TEAM]);
       console.log('更新成功');
       return result;
     } catch (err) {
@@ -76,7 +76,7 @@ class DatabaseService {
       
       const randomRecord = results[Math.floor(Math.random() * results.length)];
       const sql = `DELETE FROM ${schema}.${table} WHERE TEAM = ?`;
-      const result = await this.pool.update(sql, [randomRecord.TEAM]);
+      const result = await this.pool.execute(sql, [randomRecord.TEAM]);
       console.log('刪除成功');
       return result;
     } catch (err) {

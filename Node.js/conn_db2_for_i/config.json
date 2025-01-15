@@ -1,10 +1,23 @@
 {
   "as400": {
-    "host": "172.16.13.57",
-    "user": "ibmecs",
-    "password": "ibmecsusr",
-    "maxConnections": 10,
-    "connectionTimeout": 60000,
-    "debug": false
+    "hosts": {
+      "host1": {
+        "host": "172.16.13.57",
+        "user": "ibmecs",
+        "password": "ibmecsusr",
+        "maxConnections": 10,
+        "connectionTimeout": 60000,
+        "debug": false
+      },
+      "host2": {
+        "host": "172.16.13.58",
+        "user": "ibmecs",
+        "password": "ibmecsusr",
+        "maxConnections": 10,
+        "connectionTimeout": 60000,
+        "debug": false
+      }
+    },
+    "defaultHost": "host1"
   }
 }
