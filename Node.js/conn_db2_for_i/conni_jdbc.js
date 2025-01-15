@@ -1,4 +1,5 @@
 const jt400 = require('node-jt400');
+const random = require('random');
 
 const pool = jt400.pool({
   host: '172.16.13.58',
@@ -19,6 +20,77 @@ async function queryAS400(schema, table) {
 
   } catch (err) {
     console.error('AS400 查詢失敗:', err);
+    throw err;
+  }
+}
+
+async function addRandomRecord(schema, table) {
+  try {
+    const randomData = {
+      name: `User_${random.int(1000, 9999)}`,
+      age: random.int(18, 80),
+      email: `user_${random.int(1000, 9999)}@example.com`
+    };
+    
+    const sql = `INSERT INTO ${schema}.${table} (name, age, email) VALUES ('${randomData.name}', ${randomData.age}, '${randomData.email}')`;
+    const result = await pool.query(sql);
+    
+    console.log('新增成功');
+    return result;
+
+  } catch (err) {
+    console.error('新增失敗:', err);
+    throw err;
+  }
+}
+
+async function updateRandomRecord(schema, table) {
+  try {
+    const sql = `SELECT * FROM ${schema}.${table}`;
+    const results = await pool.query(sql);
+    
+    if (results.length === 0) {
+      console.log('沒有記錄可更新');
+      return null;
+    }
+    
+    const randomRecord = results[random.int(0, results.length - 1)];
+    const updateData = {
+      name: `Updated_User_${random.int(1000, 9999)}`,
+      age: random.int(18, 80)
+    };
+    
+    const updateSql = `UPDATE ${schema}.${table} SET name = '${updateData.name}', age = ${updateData.age} WHERE id = ${randomRecord.id}`;
+    const result = await pool.query(updateSql);
+    
+    console.log('更新成功');
+    return result;
+
+  } catch (err) {
+    console.error('更新失敗:', err);
+    throw err;
+  }
+}
+
+async function deleteRandomRecord(schema, table) {
+  try {
+    const sql = `SELECT * FROM ${schema}.${table}`;
+    const results = await pool.query(sql);
+    
+    if (results.length === 0) {
+      console.log('沒有記錄可刪除');
+      return null;
+    }
+    
+    const randomRecord = results[random.int(0, results.length - 1)];
+    const deleteSql = `DELETE FROM ${schema}.${table} WHERE id = ${randomRecord.id}`;
+    const result = await pool.query(deleteSql);
+    
+    console.log('刪除成功');
+    return result;
+
+  } catch (err) {
+    console.error('刪除失敗:', err);
     throw err;
   }
 }
