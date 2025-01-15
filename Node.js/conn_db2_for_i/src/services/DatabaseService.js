@@ -1,5 +1,13 @@
 const ConnectionPool = require('../database/ConnectionPool');
 const DatabaseError = require('../errors/DatabaseError');
+const fs = require('fs');
+const logFilePath = 'coni_jdbc.log';
+
+// Function to get the current timestamp and PID
+function getLogHeader() {
+  const date = new Date();
+  return `${date.toISOString()} [PID: ${process.pid}]`;
+}
 
 class DatabaseService {
   constructor(hostName = null) {
@@ -12,6 +20,7 @@ class DatabaseService {
       const sql = `SELECT * FROM ${schema}.${table}`;
       const results = await this.pool.query(sql);
       console.log('查詢成功');
+      fs.appendFileSync(logFilePath, `${getLogHeader()} QUERY: ${sql}\n`);
       return results;
     } catch (err) {
       if (err.message?.includes('SQL0204')) {
@@ -35,6 +44,7 @@ class DatabaseService {
       ];
       
       const result = await this.pool.execute(sql, values);
+      fs.appendFileSync(logFilePath, `${getLogHeader()} INSERT: ${sql} VALUES: ${values}\n`);
       return result;
     } catch (err) {
       throw new DatabaseError('新增失敗', 'INSERT', err);
@@ -59,6 +69,7 @@ class DatabaseService {
       const sql = `UPDATE ${schema}.${table} SET TEAM = ?, EMAILADDR = ? WHERE TEAM = ?`;
       const result = await this.pool.execute(sql, [updateData.TEAM, updateData.EMAILADDR, randomRecord.TEAM]);
       console.log('更新成功');
+      fs.appendFileSync(logFilePath, `${getLogHeader()} UPDATE: ${sql} VALUES: ${updateData}\n`);
       return result;
     } catch (err) {
       throw new DatabaseError('更新失敗', 'UPDATE', err);
@@ -78,6 +89,7 @@ class DatabaseService {
       const sql = `DELETE FROM ${schema}.${table} WHERE TEAM = ?`;
       const result = await this.pool.execute(sql, [randomRecord.TEAM]);
       console.log('刪除成功');
+      fs.appendFileSync(logFilePath, `${getLogHeader()} DELETE: ${sql} WHERE TEAM = ${randomRecord.TEAM}\n`);
       return result;
     } catch (err) {
       throw new DatabaseError('刪除失敗', 'DELETE', err);

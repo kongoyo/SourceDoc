@@ -1,5 +1,13 @@
 const jt400 = require('node-jt400');
 const ConfigManager = require('../config/ConfigManager');
+const fs = require('fs');
+const logFilePath = 'coni_jdbc.log';
+
+// Function to get the current timestamp and PID
+function getLogHeader() {
+  const date = new Date();
+  return `${date.toISOString()} [PID: ${process.pid}]`;
+}
 
 class ConnectionPool {
   static #instance = null;
@@ -23,7 +31,9 @@ class ConnectionPool {
   async query(sql, params = []) {
     const pool = this.getPool();
     try {
-      return await pool.query(sql, params);
+      const result = await pool.query(sql, params);
+      fs.appendFileSync(logFilePath, `${getLogHeader()} QUERY EXECUTED: ${sql} with params: ${params}\n`);
+      return result;
     } catch (err) {
       throw new Error(`查詢執行失敗: ${err.message}`);
     }
@@ -32,18 +42,13 @@ class ConnectionPool {
   async execute(sql, params = []) {
     const pool = this.getPool();
     try {
-      return await pool.update(sql, params);  // node-jt400 使用 update 方法執行修改操作
+      const result = await pool.update(sql, params);
+      fs.appendFileSync(logFilePath, `${getLogHeader()} EXECUTE: ${sql} with params: ${params}\n`);
+      return result;
     } catch (err) {
       throw new Error(`執行失敗: ${err.message}`);
     }
   }
-
-  async closePool() {
-    if (this.#pool) {
-      await this.#pool.close();
-      this.#pool = null;
-    }
-  }
 }
 
-module.exports = ConnectionPool; 
+module.exports = ConnectionPool;
