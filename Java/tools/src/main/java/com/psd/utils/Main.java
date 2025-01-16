@@ -1,39 +1,43 @@
 package com.psd.utils;
 
 import com.ibm.as400.access.AS400;
+import com.ibm.as400.access.AS400Message;
 import com.ibm.as400.access.CommandCall;
-import com.ibm.as400.access.PrintObjectInputStream;
-import com.ibm.as400.access.SpooledFile;
 
 public class Main 
 {
     public static void main( String[] args )
     {
         try {
-            // Class.forName("com.ibm.as400.access.AS400JDBCDriver");
-            // System.out.println("AS400JDBCDriver loaded!");
-            String system = "172.16.13.58";
-            String usr = "ibmecs";
-            String pwd = "ibmecsusr";
-            String cmd = "WRKACTJOB OUTPUT(*PRINT)";
+            // Create AS400 object to login sys1 & sys2
+            AS400 sys1 = new AS400("172.16.13.58", "ibmecs", "ibmecsusr");
+            AS400 sys2 = new AS400("172.16.13.57", "ibmecs", "ibmecsusr");
 
-            // Login
-            AS400 sys = new AS400(system, usr, pwd);
-            
-            // Execute command
-            CommandCall cmdcall = new CommandCall(sys);
-            cmdcall.run(cmd);
-            
-            // Retrieve Job
-            System.out.println(cmdcall.getServerJob());
+            // Java data to system layout
+            // AS400BidiTransform abt = new AS400BidiTransform(937);
+            // String dst = abt.toAS400Layout("DBCS中文字");
+            // System.out.println(dst);
 
-            // Retrieve Job Splf 
-            SpooledFile splf = new SpooledFile(sys, system, 0, pwd, usr, cmd);
-            System.out.println(splf);
-            String splfjob = splf.getJobName();
-            PrintObjectInputStream splfinp = splf.getInputStream();
-            // SpooledFileViewer splf = new SpooledFileViewer(splfout);
-            System.out.println(splfinp);
+            // Command類別
+            CommandCall cmd = new CommandCall(sys1);
+            cmd.run("WRKACTJOB OUTPUT(*PRINT)");
+            System.out.println(cmd.getServerJob());
+            System.out.println(cmd.getServerJob().getJobLog());
+            AS400Message[] msgList = cmd.getMessageList();
+            System.out.println(msgList[0]);
+            sys1.disconnectService(AS400.COMMAND);
+
+            // Print sys1 command result
+            // sys1.connectService(AS400.COMMAND);
+            // System.out.println(sys1.isConnected());
+
+            // Print sys2 command result
+            // sys2.connectService(AS400.COMMAND);
+            // System.out.println(sys1.isConnected());
+
+            // End process
+            System.exit(0);
+
         } catch (Exception e) {
             System.out.println(e);
         }
