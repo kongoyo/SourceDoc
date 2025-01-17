@@ -1,0 +1,34 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>查詢結果</title>
+</head>
+<body>
+    <h1>查詢結果</h1>
+    <h2>IBM產品SSI : {{ product_code }}</h2>
+    
+    <h3>EOS 日期:</h3>
+    {% if eos_error %}
+        <p>{{ eos_error }}</p>  <!-- 顯示 EOS 錯誤訊息 -->
+    {% else %}
+        <ul>
+            {% for date in eos_dates %}
+                <li>{{ date }}</li>  <!-- 顯示包含產品名稱的 EOS 日期 -->
+            {% endfor %}
+        </ul>
+    {% endif %}
+    
+    <h3>GA 日期:</h3>
+    {% if ga_error %}
+        <p>{{ ga_error }}</p>  <!-- 顯示 GA 錯誤訊息 -->
+    {% else %}
+        <ul>
+            {% for date in ga_dates %}
+                <li>{{ date }}</li>  <!-- 顯示包含產品名稱的 GA 日期 -->
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

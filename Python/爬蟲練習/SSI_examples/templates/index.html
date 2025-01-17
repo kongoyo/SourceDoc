@@ -1,0 +1,22 @@
+<!-- path/to/templates/new_template.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>IBM Product 查詢</title>
+</head>
+<body>
+    <div class="container">
+        <h1>歡迎來到產品查詢系統</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="product_code">請輸入產品代碼:</label>
+                <input type="text" class="form-control" id="product_code" name="product_code" required>
+            </div>
+            <button type="submit" class="btn btn-primary">查詢產品</button>
+        </form>
+        <!-- 新增的按鈕 -->
+        <a href="/all_products" class="btn btn-secondary mt-3">查看所有產品</a>
+    </div>
+</body>
+</html>
