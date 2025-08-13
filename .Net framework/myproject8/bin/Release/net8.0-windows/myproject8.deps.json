@@ -9,7 +9,8 @@
       "myproject8/1.0.0": {
         "dependencies": {
           "IKVM": "8.10.1",
-          "jt400": "20.0.0.0"
+          "IKVM.Image.JRE": "8.10.1",
+          "jt400": "21.0.0.0"
         },
         "runtime": {
           "myproject8.dll": {}
@@ -146,6 +147,33 @@
           "IKVM.Image.runtime.win-x86": "8.10.1"
         }
       },
+      "IKVM.Image.JRE/8.10.1": {
+        "dependencies": {
+          "IKVM.Image": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-arm": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-musl-arm": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-musl-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-musl-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.osx-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.osx-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.win-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.win-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.win-x86": "8.10.1"
+        }
+      },
+      "IKVM.Image.JRE.runtime.linux-arm/8.10.1": {},
+      "IKVM.Image.JRE.runtime.linux-arm64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.linux-musl-arm/8.10.1": {},
+      "IKVM.Image.JRE.runtime.linux-musl-arm64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.linux-musl-x64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.linux-x64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.osx-arm64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.osx-x64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.win-arm64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.win-x64/8.10.1": {},
+      "IKVM.Image.JRE.runtime.win-x86/8.10.1": {},
       "IKVM.Image.runtime.linux-arm/8.10.1": {},
       "IKVM.Image.runtime.linux-arm64/8.10.1": {},
       "IKVM.Image.runtime.linux-musl-arm/8.10.1": {},
@@ -271,11 +299,11 @@
           "System.Text.Encodings.Web": "8.0.0"
         }
       },
-      "jt400/20.0.0.0": {
+      "jt400/21.0.0.0": {
         "runtime": {
           "jt400.dll": {
-            "assemblyVersion": "20.0.0.0",
-            "fileVersion": "20.0.0.0"
+            "assemblyVersion": "21.0.0.0",
+            "fileVersion": "21.0.0.0"
           }
         }
       }
@@ -307,6 +335,90 @@
       "sha512": "sha512-wCKKLE4AzaefKXrPUT/40rGrFx1/Mm/HjBkAlYVRVo4rzmjPIGZPN2aHpPyNGpt10s45KUkz4hXxCLSAmMvKGQ==",
       "path": "ikvm.image/8.10.1",
       "hashPath": "ikvm.image.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MbkWYv8DL460ZegAaQMYW12V5XPAYaZ93Wi+U0AEO1YOHbPGc6Imi8jUAg/EerQnR4iiPkfkYvm9eHlQ9N/Rrw==",
+      "path": "ikvm.image.jre/8.10.1",
+      "hashPath": "ikvm.image.jre.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.linux-arm/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EjwGQ/NG0+0+plbC8jtRnjUiLW5Pt0puz8PWjNaYYMsbKwGuTyQ6Mdkw5EtPKRQzjlLjsONSThDGt5BSmF5OVQ==",
+      "path": "ikvm.image.jre.runtime.linux-arm/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.linux-arm.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.linux-arm64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mFhKwncj9m1lCX+1BhBbaaNNaUq6+Q2TecgWlgTS02cANIkSmf666PVXPueDiGIb2CepiIiniTMKOxQ1epnnkw==",
+      "path": "ikvm.image.jre.runtime.linux-arm64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.linux-arm64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.linux-musl-arm/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tiaykumt7zSFH26Hj5XM8kBI7ij/wGPKLed1iIW0hlD7E3qhDWEnJ9zuqKKTRZoKx6khuHita++SkOprHuzPxA==",
+      "path": "ikvm.image.jre.runtime.linux-musl-arm/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.linux-musl-arm.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.linux-musl-arm64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RkHZXrRpFjk6B3iStSfYrStwj72nlb1f4+mUQqbhYjDHpM8b8i3fNfOqunNGzSlH+4RyBroqcgv69wSEArTlAg==",
+      "path": "ikvm.image.jre.runtime.linux-musl-arm64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.linux-musl-arm64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.linux-musl-x64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xX8pJEW0B+cXcl8UHA/tfRU27Z+tlQn3Y3qP+bjcxhnpXUE1X5ReOgc7nBX8wZywChMTBHDgmxU/MHR+0UdCzQ==",
+      "path": "ikvm.image.jre.runtime.linux-musl-x64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.linux-musl-x64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.linux-x64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YfTkhkuWqj3dKF+heMtLsoZNSVfuzsg6cP/yQT+A/pH56ZIMs67xDX0mQ1GfCFN2iM3RP3YAR/RZkO/OlVKO4Q==",
+      "path": "ikvm.image.jre.runtime.linux-x64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.linux-x64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.osx-arm64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/+u6O5NQebDKVSL2riWZq8hER3U+H/CR3CT/Le/0KffqCbFS1JgSqoYx0W8Yj6shNBtr4wec/DzPNXD+AYZr+Q==",
+      "path": "ikvm.image.jre.runtime.osx-arm64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.osx-arm64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.osx-x64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KrJMEi70ODSGJVi+CBE+PlOGFXg/r6sz4XJJ/cEMZzyPgU/mLsrpSS7LOeJL3vXiU7KD6M8DTlIa/THF6E1sCA==",
+      "path": "ikvm.image.jre.runtime.osx-x64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.osx-x64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.win-arm64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qpT3/CWMkC/bXWY+fkYgJitlhRlXYAsnSAyuIxbmczr5s3wPzN2x/wNudv0bBXUp3QVnJOn3CD3kV35AwLUQ7w==",
+      "path": "ikvm.image.jre.runtime.win-arm64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.win-arm64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.win-x64/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O+htKZtzVTO3i3Mc8UsoinV/xqe+TdKKCNFMV7IJVJKHuUpSDaQjNH66l9ajmr5Q8Di5sqccJY4MDfuAyvUI2w==",
+      "path": "ikvm.image.jre.runtime.win-x64/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.win-x64.8.10.1.nupkg.sha512"
+    },
+    "IKVM.Image.JRE.runtime.win-x86/8.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uOn9vSYc4v4VDYbNOh3Vy8cMyDz+gEHb/RMFVo/JRARK6I9P53NW6EmGIjS3/eef04gmh+nizh95jMT84EKgYQ==",
+      "path": "ikvm.image.jre.runtime.win-x86/8.10.1",
+      "hashPath": "ikvm.image.jre.runtime.win-x86.8.10.1.nupkg.sha512"
     },
     "IKVM.Image.runtime.linux-arm/8.10.1": {
       "type": "package",
@@ -511,7 +623,7 @@
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
     },
-    "jt400/20.0.0.0": {
+    "jt400/21.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

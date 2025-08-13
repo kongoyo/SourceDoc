@@ -23,7 +23,7 @@ namespace myproject7
             try
             {
                 radLabel1.Text = "Somebody click the button!!!";
-                AS400 as400 = new AS400("172.16.13.34", "QSECOFR", "PASSWORD");
+                AS400 as400 = new AS400("pub400.com", "clhsteve", "Tp6xu4vm0sir");
             } catch (Exception ex) {
                 Console.Out.Write(ex.Message);
             }
