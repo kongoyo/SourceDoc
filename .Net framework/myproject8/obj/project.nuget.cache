@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gtWdJNON6Y4=",
+  "dgSpecHash": "Yp9Q65bHdKc=",
   "success": true,
-  "projectFilePath": "D:\\Github\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
+  "projectFilePath": "d:\\Github\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
   "expectedPackageFiles": [
     "D:\\TOOLS\\Microsoft\\VisualStudio\\NuGet\\packages\\ikvm\\8.10.1\\ikvm.8.10.1.nupkg.sha512",
     "D:\\TOOLS\\Microsoft\\VisualStudio\\NuGet\\packages\\ikvm.bytecode\\9.0.0\\ikvm.bytecode.9.0.0.nupkg.sha512",
