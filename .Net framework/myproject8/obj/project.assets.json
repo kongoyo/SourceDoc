@@ -693,6 +693,594 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       }
+    },
+    "net8.0-windows7.0/win-x86": {
+      "IKVM/8.10.1": {
+        "type": "package",
+        "dependencies": {
+          "IKVM.ByteCode": "9.0.0",
+          "IKVM.Image": "8.10.1",
+          "IKVM.MSBuild": "8.10.1",
+          "Microsoft.Extensions.DependencyModel": "8.0.0",
+          "System.Data.Odbc": "8.0.0"
+        },
+        "compile": {
+          "ref/net8.0/IKVM.Java.dll": {},
+          "ref/net8.0/IKVM.Runtime.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/IKVM.Java.dll": {
+            "related": ".pdb"
+          },
+          "runtimes/win/lib/net8.0/IKVM.Runtime.dll": {
+            "related": ".pdb"
+          }
+        },
+        "native": {
+          "runtimes/win-x86/native/ikvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.props": {},
+          "buildTransitive/IKVM.targets": {}
+        }
+      },
+      "IKVM.ByteCode/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.Collections.Immutable": "8.0.0",
+          "System.IO.Pipelines": "8.0.0",
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "lib/net8.0/IKVM.ByteCode.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/IKVM.ByteCode.dll": {}
+        }
+      },
+      "IKVM.Image/8.10.1": {
+        "type": "package",
+        "dependencies": {
+          "IKVM.Image.runtime.linux-arm": "8.10.1",
+          "IKVM.Image.runtime.linux-arm64": "8.10.1",
+          "IKVM.Image.runtime.linux-musl-arm": "8.10.1",
+          "IKVM.Image.runtime.linux-musl-arm64": "8.10.1",
+          "IKVM.Image.runtime.linux-musl-x64": "8.10.1",
+          "IKVM.Image.runtime.linux-x64": "8.10.1",
+          "IKVM.Image.runtime.osx-arm64": "8.10.1",
+          "IKVM.Image.runtime.osx-x64": "8.10.1",
+          "IKVM.Image.runtime.win-arm64": "8.10.1",
+          "IKVM.Image.runtime.win-x64": "8.10.1",
+          "IKVM.Image.runtime.win-x86": "8.10.1"
+        },
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.props": {},
+          "buildTransitive/IKVM.Image.targets": {}
+        }
+      },
+      "IKVM.Image.JRE/8.10.1": {
+        "type": "package",
+        "dependencies": {
+          "IKVM.Image": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-arm": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-musl-arm": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-musl-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-musl-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.linux-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.osx-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.osx-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.win-arm64": "8.10.1",
+          "IKVM.Image.JRE.runtime.win-x64": "8.10.1",
+          "IKVM.Image.JRE.runtime.win-x86": "8.10.1"
+        },
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.linux-arm/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.linux-arm.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.linux-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.linux-arm64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.linux-musl-arm/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.linux-musl-arm.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.linux-musl-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.linux-musl-arm64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.linux-musl-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.linux-musl-x64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.linux-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.linux-x64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.osx-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.osx-arm64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.osx-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.osx-x64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.win-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.win-arm64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.win-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.win-x64.props": {}
+        }
+      },
+      "IKVM.Image.JRE.runtime.win-x86/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.JRE.runtime.win-x86.props": {}
+        }
+      },
+      "IKVM.Image.runtime.linux-arm/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.linux-arm.props": {}
+        }
+      },
+      "IKVM.Image.runtime.linux-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.linux-arm64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.linux-musl-arm/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.linux-musl-arm.props": {}
+        }
+      },
+      "IKVM.Image.runtime.linux-musl-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.linux-musl-arm64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.linux-musl-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.linux-musl-x64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.linux-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.linux-x64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.osx-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.osx-arm64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.osx-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.osx-x64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.win-arm64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.win-arm64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.win-x64/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.win-x64.props": {}
+        }
+      },
+      "IKVM.Image.runtime.win-x86/8.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.Image.runtime.win-x86.props": {}
+        }
+      },
+      "IKVM.MSBuild/8.10.1": {
+        "type": "package",
+        "dependencies": {
+          "IKVM.MSBuild.Tools": "8.10.1"
+        },
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.MSBuild.props": {},
+          "buildTransitive/IKVM.MSBuild.targets": {}
+        }
+      },
+      "IKVM.MSBuild.Tools/8.10.1": {
+        "type": "package",
+        "dependencies": {
+          "IKVM.MSBuild.Tools.runtime.linux-arm": "8.10.1",
+          "IKVM.MSBuild.Tools.runtime.linux-arm64": "8.10.1",
+          "IKVM.MSBuild.Tools.runtime.linux-x64": "8.10.1",
+          "IKVM.MSBuild.Tools.runtime.osx-arm64": "8.10.1",
+          "IKVM.MSBuild.Tools.runtime.osx-x64": "8.10.1",
+          "IKVM.MSBuild.Tools.runtime.win-arm64": "8.10.1",
+          "IKVM.MSBuild.Tools.runtime.win-x64": "8.10.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.targets": {}
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.linux-arm/8.10.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.runtime.linux-arm.props": {}
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.linux-arm64/8.10.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.runtime.linux-arm64.props": {}
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.linux-x64/8.10.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.runtime.linux-x64.props": {}
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.osx-arm64/8.10.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.runtime.osx-arm64.props": {}
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.osx-x64/8.10.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.runtime.osx-x64.props": {}
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.win-arm64/8.10.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.runtime.win-arm64.props": {}
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.win-x64/8.10.1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/IKVM.MSBuild.Tools.runtime.win-x64.props": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0",
+          "System.Text.Json": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Collections.Immutable/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Data.Odbc/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Data.Odbc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Data.Odbc.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.IO.Pipelines/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Encodings.Web/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Json/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -12053,14 +12641,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
+      "projectUniqueName": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
       "projectName": "jt400-21.05",
-      "projectPath": "e:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
+      "projectPath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
       "packagesPath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget",
-      "outputPath": "e:\\src\\SourceDoc\\.Net framework\\myproject8\\obj\\",
+      "outputPath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "e:\\src\\SourceDoc\\.Net framework\\myproject8\\NuGet.Config",
+        "E:\\src\\SourceDoc\\.Net framework\\myproject8\\NuGet.Config",
         "C:\\Users\\stevec\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -12119,6 +12707,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x86": {
+        "#import": []
       }
     }
   }
