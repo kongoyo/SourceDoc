@@ -60,6 +60,11 @@ namespace myproject8
             try
             {
                 AS400 as400 = new(conn_sysip, conn_userid, conn_userpw);
+
+                // 設定 Coded Character Set ID (CCSID) 以匹配 IBM i 系統。
+                // 繁體中文環境通常使用 937。請與您的系統管理員確認正確的 CCSID。
+                as400.setCcsid(937);
+
                 CommandCall cmd = new CommandCall(as400);
 
                 // Run the command.
@@ -73,17 +78,22 @@ namespace myproject8
                 }
 
                 // If messages were produced from the command, print them
-                AS400Message[] messagelist = cmd.getMessageList();
-
+                var messagelist = cmd.getMessageList();
+                
                 if (messagelist.Length > 0)
                 {
-                    cmdstr.Text = "messages from the command:";
+                    cmdstr.Text = "Messages from the command:";
+                    var messageBuilder = new StringBuilder();
+                    // Use a foreach loop to iterate through all messages
+                    foreach (var message in messagelist)
+                    {
+                        // Append each message's ID and text, followed by a new line.
+                        messageBuilder.AppendLine($"{message.getID()}: {message.getText()}");
+                    }
+                    // Assign the combined string to the TextBox once.
+                    textBox1.Text = messageBuilder.ToString();
                 }
-
-                for (int i = 0; i < messagelist.Length; i++)
-                {
-                    textBox1.Text = messagelist[i].getID() + ":" + messagelist[i].getText();
-                }
+                // If there are no messages, the TextBox will not be changed.
             }
             catch (Exception ex)
             {

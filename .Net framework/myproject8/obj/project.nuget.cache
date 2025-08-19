@@ -1,31 +1,53 @@
 {
   "version": 2,
-  "dgSpecHash": "X3Q1DwftD6s=",
-  "success": false,
+  "dgSpecHash": "u/+qjChlVOo=",
+  "success": true,
   "projectFilePath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "無法解析 'net8.0-windows7.0' 的 'IKVM.Image.JRE (>= 8.10.1)'。",
-      "projectPath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
-      "filePath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
-      "libraryId": "IKVM.Image.JRE",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "無法解析 'net8.0-windows7.0' 的 'IKVM (>= 8.10.1)'。",
-      "projectPath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
-      "filePath": "E:\\src\\SourceDoc\\.Net framework\\myproject8\\jt400-21.05.csproj",
-      "libraryId": "IKVM",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm\\8.10.1\\ikvm.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.bytecode\\9.0.0\\ikvm.bytecode.9.0.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image\\8.10.1\\ikvm.image.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre\\8.10.1\\ikvm.image.jre.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.linux-arm\\8.10.1\\ikvm.image.jre.runtime.linux-arm.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.linux-arm64\\8.10.1\\ikvm.image.jre.runtime.linux-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.linux-musl-arm\\8.10.1\\ikvm.image.jre.runtime.linux-musl-arm.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.linux-musl-arm64\\8.10.1\\ikvm.image.jre.runtime.linux-musl-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.linux-musl-x64\\8.10.1\\ikvm.image.jre.runtime.linux-musl-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.linux-x64\\8.10.1\\ikvm.image.jre.runtime.linux-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.osx-arm64\\8.10.1\\ikvm.image.jre.runtime.osx-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.osx-x64\\8.10.1\\ikvm.image.jre.runtime.osx-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.win-arm64\\8.10.1\\ikvm.image.jre.runtime.win-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.win-x64\\8.10.1\\ikvm.image.jre.runtime.win-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.jre.runtime.win-x86\\8.10.1\\ikvm.image.jre.runtime.win-x86.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.linux-arm\\8.10.1\\ikvm.image.runtime.linux-arm.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.linux-arm64\\8.10.1\\ikvm.image.runtime.linux-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.linux-musl-arm\\8.10.1\\ikvm.image.runtime.linux-musl-arm.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.linux-musl-arm64\\8.10.1\\ikvm.image.runtime.linux-musl-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.linux-musl-x64\\8.10.1\\ikvm.image.runtime.linux-musl-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.linux-x64\\8.10.1\\ikvm.image.runtime.linux-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.osx-arm64\\8.10.1\\ikvm.image.runtime.osx-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.osx-x64\\8.10.1\\ikvm.image.runtime.osx-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.win-arm64\\8.10.1\\ikvm.image.runtime.win-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.win-x64\\8.10.1\\ikvm.image.runtime.win-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.image.runtime.win-x86\\8.10.1\\ikvm.image.runtime.win-x86.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild\\8.10.1\\ikvm.msbuild.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools\\8.10.1\\ikvm.msbuild.tools.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools.runtime.linux-arm\\8.10.1\\ikvm.msbuild.tools.runtime.linux-arm.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools.runtime.linux-arm64\\8.10.1\\ikvm.msbuild.tools.runtime.linux-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools.runtime.linux-x64\\8.10.1\\ikvm.msbuild.tools.runtime.linux-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools.runtime.osx-arm64\\8.10.1\\ikvm.msbuild.tools.runtime.osx-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools.runtime.osx-x64\\8.10.1\\ikvm.msbuild.tools.runtime.osx-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools.runtime.win-arm64\\8.10.1\\ikvm.msbuild.tools.runtime.win-arm64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\ikvm.msbuild.tools.runtime.win-x64\\8.10.1\\ikvm.msbuild.tools.runtime.win-x64.8.10.1.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\microsoft.extensions.dependencymodel\\8.0.0\\microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\system.data.odbc\\8.0.0\\system.data.odbc.8.0.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "E:\\src\\SourceDoc\\.Net framework\\myproject8\\nuget\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }
