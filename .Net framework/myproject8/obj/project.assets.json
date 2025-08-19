@@ -694,7 +694,7 @@
         }
       }
     },
-    "net8.0-windows7.0/win-x86": {
+    "net8.0-windows7.0/win-x64": {
       "IKVM/8.10.1": {
         "type": "package",
         "dependencies": {
@@ -717,7 +717,7 @@
           }
         },
         "native": {
-          "runtimes/win-x86/native/ikvm.dll": {}
+          "runtimes/win-x64/native/ikvm.dll": {}
         },
         "build": {
           "buildTransitive/IKVM.props": {},
@@ -12710,7 +12710,7 @@
       }
     },
     "runtimes": {
-      "win-x86": {
+      "win-x64": {
         "#import": []
       }
     }

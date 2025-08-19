@@ -1,4 +1,4 @@
-﻿namespace myproject8
+﻿﻿﻿﻿namespace myproject8
 {
     partial class Form1
     {
@@ -37,6 +37,10 @@
             systemip = new System.Windows.Forms.MaskedTextBox();
             userid = new System.Windows.Forms.MaskedTextBox();
             userpw = new System.Windows.Forms.MaskedTextBox();
+            closeButton = new System.Windows.Forms.Button();
+            profileComboBox = new System.Windows.Forms.ComboBox();
+            manageProfilesButton = new System.Windows.Forms.Button();
+            label2 = new System.Windows.Forms.Label();
             SuspendLayout();
             // 
             // button1
@@ -54,7 +58,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 136);
-            label1.Location = new System.Drawing.Point(81, 25);
+            label1.Location = new System.Drawing.Point(81, 60);
             label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(71, 18);
@@ -86,7 +90,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 136);
-            label3.Location = new System.Drawing.Point(226, 25);
+            label3.Location = new System.Drawing.Point(226, 60);
             label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(56, 18);
@@ -98,7 +102,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 136);
-            label4.Location = new System.Drawing.Point(367, 25);
+            label4.Location = new System.Drawing.Point(367, 60);
             label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(70, 18);
@@ -108,7 +112,7 @@
             // 
             // systemip
             // 
-            systemip.Location = new System.Drawing.Point(81, 47);
+            systemip.Location = new System.Drawing.Point(81, 82);
             systemip.Name = "systemip";
             systemip.Size = new System.Drawing.Size(97, 23);
             systemip.TabIndex = 10;
@@ -116,7 +120,7 @@
             // 
             // userid
             // 
-            userid.Location = new System.Drawing.Point(226, 47);
+            userid.Location = new System.Drawing.Point(226, 82);
             userid.Name = "userid";
             userid.Size = new System.Drawing.Size(97, 23);
             userid.TabIndex = 11;
@@ -124,17 +128,62 @@
             // 
             // userpw
             // 
-            userpw.Location = new System.Drawing.Point(367, 47);
+            userpw.Location = new System.Drawing.Point(367, 82);
             userpw.Name = "userpw";
             userpw.Size = new System.Drawing.Size(97, 23);
             userpw.TabIndex = 12;
             userpw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            userpw.UseSystemPasswordChar = true;
+            // 
+            // closeButton
+            // 
+            closeButton.Location = new System.Drawing.Point(527, 90);
+            closeButton.Margin = new System.Windows.Forms.Padding(2);
+            closeButton.Name = "closeButton";
+            closeButton.Size = new System.Drawing.Size(92, 25);
+            closeButton.TabIndex = 13;
+            closeButton.Text = "結束";
+            closeButton.UseVisualStyleBackColor = true;
+            closeButton.Click += closeButton_Click;
+            // 
+            // profileComboBox
+            // 
+            profileComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            profileComboBox.FormattingEnabled = true;
+            profileComboBox.Location = new System.Drawing.Point(81, 28);
+            profileComboBox.Name = "profileComboBox";
+            profileComboBox.Size = new System.Drawing.Size(242, 23);
+            profileComboBox.TabIndex = 14;
+            profileComboBox.SelectedIndexChanged += profileComboBox_SelectedIndexChanged;
+            // 
+            // manageProfilesButton
+            // 
+            manageProfilesButton.Location = new System.Drawing.Point(329, 27);
+            manageProfilesButton.Name = "manageProfilesButton";
+            manageProfilesButton.Size = new System.Drawing.Size(135, 25);
+            manageProfilesButton.TabIndex = 15;
+            manageProfilesButton.Text = "管理設定檔...";
+            manageProfilesButton.UseVisualStyleBackColor = true;
+            manageProfilesButton.Click += manageProfilesButton_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(28, 31);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(47, 15);
+            label2.TabIndex = 16;
+            label2.Text = "設定檔:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(700, 450);
+            Controls.Add(label2);
+            Controls.Add(manageProfilesButton);
+            Controls.Add(profileComboBox);
+            Controls.Add(closeButton);
             Controls.Add(userpw);
             Controls.Add(userid);
             Controls.Add(systemip);
@@ -160,6 +209,9 @@
         private System.Windows.Forms.MaskedTextBox systemip;
         private System.Windows.Forms.MaskedTextBox userid;
         private System.Windows.Forms.MaskedTextBox userpw;
+        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.ComboBox profileComboBox;
+        private System.Windows.Forms.Button manageProfilesButton;
+        private System.Windows.Forms.Label label2;
     }
 }
-
